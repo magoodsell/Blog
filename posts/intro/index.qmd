@@ -3,11 +3,11 @@ title: "The Intro and Top Hitters, Batters and Catchers in the Pioneer Baseball 
 author: "Matthew Goodsell"
 date: "2023-01-28"
 categories: [baseball, sabrmetrics, analysis]
-draft: True
+freeze: True
 ---
 
 ```{r setup, echo=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning=FALSE)
 ```
 
 # How I got here
@@ -26,7 +26,7 @@ I was in my senior year at Brigham Young University - Idaho located in Rexburg j
 
 More about the data coming from Trackman. Trackman is actually in all the MLB ballparks and a main source of MLB teams data. The v3 version, I got the chance to operate, returns 167 different variables on batters, pitchers and catchers. Here is a snipbit of some of the variables: 
 
-```{r tm_data, message=FALSE, warning=FALSE}
+```{r tm_data}
 # show only some columns 
 library(tidyverse, DT) 
 
@@ -483,8 +483,8 @@ Rankings for each Metrics of the top ten Catchers
 With next season starting at the end of May and as the Chair of the Data Analytics committee I have been thinking about the best things to do that will benefit the league in the future. As I have gathered the information I can I know that the following projects are what will help benefit the league this upcoming season: 
 
 - A File Transfer Protocol (FTP) script to automate the gathering all the trackman data
-- a web scrapping script to get Umpire information per game
-- a web application to evaluate Umpire performance and I plan on starting a pitch classification model
+- A web scrapping script to get Umpire information per game
+- A web application to evaluate Umpire performance and I plan on starting a pitch classification model
 - I know the former might be more complex, but I will see where I get. 
 
  
