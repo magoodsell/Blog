@@ -85,7 +85,7 @@ The following metrics and formula's are:
 ## Pitcher Metrics
 
 $$
-\text{Ground Ball%} = \frac{Ground Balls} {Pitches Hit In Play}
+\text{Ground Ball Perc} = \frac{Ground Balls} {Pitches Hit In Play}
 $$
 
 - A higher GB % is desired since it is expected to result in outs.
@@ -105,7 +105,7 @@ all_pitcher_gb_perc <- total_gb %>%
 ```
 
 $$
-\text{Fly Ball %} = \frac{Fly Balls} {Pitches Hit In Play}
+\text{Fly Ball Perc} = \frac{Fly Balls} {Pitches Hit In Play}
 $$
 
 - A lower FB % is desired as well
@@ -125,7 +125,7 @@ all_pitcher_fb_perc <- total_fb %>%
 ```
 
 $$
-\text{1st Pitch Strike %} = \frac{1st Called Strike}{Total 1st Pitches}
+\text{1st Pitch Strike Perc} = \frac{1st Called Strike}{Total 1st Pitches}
 $$
 
 - A Higher 1 pitch strike % is desired and shows the control a pitcher has. 
@@ -153,7 +153,7 @@ all_pitcher_first_pitch <- total_first_pitch %>%
 ```
 
 $$
-\text{KZone %} = \frac{Total In Play OR Inside Strike Zone}{Total Pitches}
+\text{KZone Perc} = \frac{Total In Play OR Inside Strike Zone}{Total Pitches}
 $$
 
 - This metric shows the overall control the pitchers has over his pitches and ability to hit the specific spot. 
@@ -182,7 +182,7 @@ all_pitcher_kzone <- total_pitch_count %>%
 ```
 
 $$
-\text{Chase Against %} = \frac{Strike Swinging}{Total Out of Zone}
+\text{Chase Against Perc} = \frac{Strike Swinging}{Total Out of Zone}
 $$
 
 - Chase against % is not a direct correlation to the movement of a pitch but does the deceptiveness in a pitchers pitch.
@@ -484,7 +484,7 @@ With next season starting at the end of May and as the Chair of the Data Analyti
 
 - A File Transfer Protocol (FTP) script to automate the gathering all the trackman data
 - A web scrapping script to get Umpire information per game
-- A web application to evaluate Umpire performance and I plan on starting a pitch classification model
-- I know the former might be more complex, but I will see where I get. 
+- A web application to evaluate Umpire performance 
+- A pitch classification model 
 
  
