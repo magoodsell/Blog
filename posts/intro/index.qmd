@@ -2,12 +2,16 @@
 title: "The Intro and Top Hitters, Batters and Catchers in the Pioneer Baseball League"
 author: "Matthew Goodsell"
 date: "2023-01-28"
-categories: [baseball, sabrmetrics, analysis]
+categories: [Baseball, SABRmetrics, Analysis]
 freeze: True
+format: 
+  html: 
+    code-fold: true
+    code-tools: true
 ---
 
 ```{r setup, echo=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning=FALSE)
+knitr::opts_chunk$set(message = FALSE, warning=FALSE)
 ```
 
 # How I got here
@@ -28,7 +32,7 @@ More about the data coming from Trackman. Trackman is actually in all the MLB ba
 
 ```{r tm_data}
 # show only some columns 
-library(tidyverse, DT) 
+pacman::p_load(tidyverse, DT) 
 
 all_games <- read_csv('../../data/unverified_all_games.csv')
 
@@ -85,10 +89,12 @@ The following metrics and formula's are:
 ## Pitcher Metrics
 
 $$
-\text{Ground Ball Perc} = \frac{Ground Balls} {Pitches Hit In Play}
+\text{Ground Ball Perc} = \frac{Ground\; Balls} {Pitches\; Hit\; In\; Play}
 $$
 
 - A higher GB % is desired since it is expected to result in outs.
+
+- Code to calculate Ground Ball Perc
 
 ```{r gb_perc}
 total_gb <- all_games %>% 
@@ -105,10 +111,12 @@ all_pitcher_gb_perc <- total_gb %>%
 ```
 
 $$
-\text{Fly Ball Perc} = \frac{Fly Balls} {Pitches Hit In Play}
+\text{Fly Ball Perc} = \frac{Fly\; Balls} {Pitches\; Hit\; In\; Play}
 $$
 
 - A lower FB % is desired as well
+
+- Code to calculate Fly Ball Perc
 
 ```{r fb_perc}
 total_fb <- all_games %>% 
@@ -125,10 +133,12 @@ all_pitcher_fb_perc <- total_fb %>%
 ```
 
 $$
-\text{1st Pitch Strike Perc} = \frac{1st Called Strike}{Total 1st Pitches}
+\text{1st Pitch Strike Perc} = \frac{1st\; Called\; Strike}{Total\; 1st\; Pitches}
 $$
 
 - A Higher 1 pitch strike % is desired and shows the control a pitcher has. 
+
+- Code to calculate 1st Pitch Strike Perc
 
 ```{r 1st_pitch_k_perc}
 total_first_pitch <- all_games %>% 
@@ -153,10 +163,12 @@ all_pitcher_first_pitch <- total_first_pitch %>%
 ```
 
 $$
-\text{KZone Perc} = \frac{Total In Play OR Inside Strike Zone}{Total Pitches}
+\text{KZone Perc} = \frac{Total\; In\; Play\; OR\; Inside\; Strike\; Zone}{Total\; Pitches}
 $$
 
 - This metric shows the overall control the pitchers has over his pitches and ability to hit the specific spot. 
+
+- Code to calculate KZone Perc
 
 ```{r kzone_perc}
 total_pitch_count <- all_games %>% 
@@ -182,10 +194,12 @@ all_pitcher_kzone <- total_pitch_count %>%
 ```
 
 $$
-\text{Chase Against Perc} = \frac{Strike Swinging}{Total Out of Zone}
+\text{Chase Against Perc} = \frac{Strike\; Swinging}{Total\; Out\; of\; Zone}
 $$
 
 - Chase against % is not a direct correlation to the movement of a pitch but does the deceptiveness in a pitchers pitch.
+
+- Code to calculate Chase Against Perc
 
 ```{r chase_perc}
 total_out_zone <- all_games %>%
@@ -213,6 +227,7 @@ all_pitcher_chase_against <- total_out_zone %>%
 Along with: 
 
 - exit velo against
+- Code to calculate Exit Velo against
 
 ```{r exit_velo}
 pitcher_exit_speed_avg <- all_games %>% 
@@ -228,6 +243,7 @@ all_pitcher_exit_velo <- pitcher_exit_speed_avg %>%
 ```
 
 - vertical launch angle against
+- Code to calculate vertical launch angle against
 
 ```{r vert_la}
 pitcher_avg_exit_angle <- all_games %>% 

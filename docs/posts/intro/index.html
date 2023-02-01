@@ -22,6 +22,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -116,11 +179,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">The Intro and Top Hitters, Batters and Catchers in the Pioneer Baseball League</h1>
+      <div class="quarto-title-block"><div><h1 class="title">The Intro and Top Hitters, Batters and Catchers in the Pioneer Baseball League</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
                                 <div class="quarto-categories">
-                <div class="quarto-category">baseball</div>
-                <div class="quarto-category">sabrmetrics</div>
-                <div class="quarto-category">analysis</div>
+                <div class="quarto-category">Baseball</div>
+                <div class="quarto-category">SABRmetrics</div>
+                <div class="quarto-category">Analysis</div>
               </div>
                   </div>
   </div>
@@ -170,14 +233,52 @@ ul.task-list li input[type="checkbox"] {
 <p>I was in my senior year at Brigham Young University - Idaho located in Rexburg just a 25 minute drive from the ballpark. I had heard about the Chukars but never attended one of their games. I actually never grew up playing baseball. One reason why I didn’t go to a game. It’s not that I don’t like to watch, I have been to a Washington Nationals game and Philadelphia Phillies game as I am from Virginia. Anyways, I had taken a couple math classes from a professor who I had developed a good relationship with. It was a fateful conversation we had one day in the hallway were I opened up to him about where I was and what I really wanted to do with my Major in Data Science. He had the crazy idea to contact the Chukars which took me a minute to remember they are the baseball team in Idaho Falls. We both followed up on it and got to talk to the assistant GM for them. Eventually that lead to me being the trackman operator for the Chukars during the 2022 season.</p>
 <p>More about the data coming from Trackman. Trackman is actually in all the MLB ballparks and a main source of MLB teams data. The v3 version, I got the chance to operate, returns 167 different variables on batters, pitchers and catchers. Here is a snipbit of some of the variables:</p>
 <div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># show only some columns </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(tidyverse, DT) </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>all_games <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'../../data/unverified_all_games.csv'</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>all_games_2 <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> .[<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,]</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(all_games_2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output-display">
 
-<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-cfb18823e1fab1c326c0" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-cfb18823e1fab1c326c0">{"x":{"filter":"none","vertical":false,"data":[["1","2"],[1,2],["2022-05-25","2022-05-25"],["19:19:21","19:19:35"],[1,1],[1,2],["Silva, Daniel","Silva, Daniel"],[null,null],["Right","Right"],["IDA_CHU","IDA_CHU"],["Lopez, Kobe","Lopez, Kobe"],[null,null],["Right","Right"],["BOI_HAW","BOI_HAW"],["Undefined","Undefined"],[1,1],["Top","Top"],[0,0],[0,0],[0,1],["Fastball","Fastball"],["Changeup","Four-Seam"],["StrikeCalled","StrikeCalled"],["Undefined","Undefined"],["Undefined","Undefined"],["Undefined","Undefined"],[0,0],[0,0],[null,null],[86.38072,87.00951],[-2.640117,-2.243939],[-2.434554,-1.698087],[2168.338646,2222.428517],[224.437164,218.833397],["01:30:00","01:15:00"],[6.32228,6.46702],[1.82606,1.57418],[6.08682,5.97102],[-24.25482,-22.02706],[12.78532,14.97213],[11.43469,11.05438],[1.85486,2.54915],[0.52551,0.92067],[79.63591,79.3226],[-7.164108,-6.38959],[-0.37465,0.289486],[0.438034,0.437792],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[-6.58681,-6.1804],[7.6439,8.72008],[-1.64437,-1.4459],[50,50],[6.10542,6.27709],[4.89003,3.29208],[-125.40318,-126.23639],[-6.53081,-5.61542],[-10.54405,-9.91992],[24.11213,26.9743],[-19.93785,-18.17776],["IDA_CHU","IDA_CHU"],["BOI_HAW","BOI_HAW"],["MelaleucaField","MelaleucaField"],["Independent","Independent"],["PIO","PIO"],["20220525-MelaleucaField-1","20220525-MelaleucaField-1"],["dfd96de0-dc91-11ec-8e16-eb1e2399e25b","e7ef6fc0-dc91-11ec-8e16-eb1e2399e25b"],[86.04917,86.09673],[null,null],[null,null],[6.74481,7.6869],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],["a389663e-a905-4862-a351-74be26fcbd79","a389663e-a905-4862-a351-74be26fcbd79"],["2022-05-26","2022-05-26"],["01:19:21","01:19:35"],["2022-05-26T01:19:21Z","2022-05-26T01:19:35Z"],["2022-05-26T01:19:21Z","2022-05-26T01:19:35Z"],[null,null],["v3","v3"],[444,444],[480,480],[null,null],["West, Brady","West, Brady"],[null,null],["Right","Right"],["IDA_CHU","IDA_CHU"],["417ff9e0-466c-4368-b2c6-7e036a618053","13a2eb0c-e137-41c5-91ad-4f3d6bf3e4fc"],[54.4121,54.52551],[-126.24868,-127.19973],[12.05606,13.48715],[6.32217,6.46604],[-5.83168,-4.96623],[-9.96893,-9.08888],[-1.82232,-1.5698],[5.25976,3.64636],[-5.27202,-4.95996],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],["High","High"],["High","High"],["High","High"],[null,null],[null,null],[null,null],[null,null],[null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>PitchNo<\/th>\n      <th>Date<\/th>\n      <th>Time<\/th>\n      <th>PAofInning<\/th>\n      <th>PitchofPA<\/th>\n      <th>Pitcher<\/th>\n      <th>PitcherId<\/th>\n      <th>PitcherThrows<\/th>\n      <th>PitcherTeam<\/th>\n      <th>Batter<\/th>\n      <th>BatterId<\/th>\n      <th>BatterSide<\/th>\n      <th>BatterTeam<\/th>\n      <th>PitcherSet<\/th>\n      <th>Inning<\/th>\n      <th>Top/Bottom<\/th>\n      <th>Outs<\/th>\n      <th>Balls<\/th>\n      <th>Strikes<\/th>\n      <th>TaggedPitchType<\/th>\n      <th>AutoPitchType<\/th>\n      <th>PitchCall<\/th>\n      <th>KorBB<\/th>\n      <th>TaggedHitType<\/th>\n      <th>PlayResult<\/th>\n      <th>OutsOnPlay<\/th>\n      <th>RunsScored<\/th>\n      <th>Notes<\/th>\n      <th>RelSpeed<\/th>\n      <th>VertRelAngle<\/th>\n      <th>HorzRelAngle<\/th>\n      <th>SpinRate<\/th>\n      <th>SpinAxis<\/th>\n      <th>Tilt<\/th>\n      <th>RelHeight<\/th>\n      <th>RelSide<\/th>\n      <th>Extension<\/th>\n      <th>VertBreak<\/th>\n      <th>InducedVertBreak<\/th>\n      <th>HorzBreak<\/th>\n      <th>PlateLocHeight<\/th>\n      <th>PlateLocSide<\/th>\n      <th>ZoneSpeed<\/th>\n      <th>VertApprAngle<\/th>\n      <th>HorzApprAngle<\/th>\n      <th>ZoneTime<\/th>\n      <th>ExitSpeed<\/th>\n      <th>Angle<\/th>\n      <th>Direction<\/th>\n      <th>HitSpinRate<\/th>\n      <th>PositionAt110X<\/th>\n      <th>PositionAt110Y<\/th>\n      <th>PositionAt110Z<\/th>\n      <th>Distance<\/th>\n      <th>LastTrackedDistance<\/th>\n      <th>Bearing<\/th>\n      <th>HangTime<\/th>\n      <th>pfxx<\/th>\n      <th>pfxz<\/th>\n      <th>x0<\/th>\n      <th>y0<\/th>\n      <th>z0<\/th>\n      <th>vx0<\/th>\n      <th>vy0<\/th>\n      <th>vz0<\/th>\n      <th>ax0<\/th>\n      <th>ay0<\/th>\n      <th>az0<\/th>\n      <th>HomeTeam<\/th>\n      <th>AwayTeam<\/th>\n      <th>Stadium<\/th>\n      <th>Level<\/th>\n      <th>League<\/th>\n      <th>GameID<\/th>\n      <th>PitchUID<\/th>\n      <th>EffectiveVelo<\/th>\n      <th>MaxHeight<\/th>\n      <th>MeasuredDuration<\/th>\n      <th>SpeedDrop<\/th>\n      <th>PitchLastMeasuredX<\/th>\n      <th>PitchLastMeasuredY<\/th>\n      <th>PitchLastMeasuredZ<\/th>\n      <th>ContactPositionX<\/th>\n      <th>ContactPositionY<\/th>\n      <th>ContactPositionZ<\/th>\n      <th>GameUID<\/th>\n      <th>UTCDate<\/th>\n      <th>UTCTime<\/th>\n      <th>LocalDateTime<\/th>\n      <th>UTCDateTime<\/th>\n      <th>AutoHitType<\/th>\n      <th>System<\/th>\n      <th>HomeTeamForeignID<\/th>\n      <th>AwayTeamForeignID<\/th>\n      <th>GameForeignID<\/th>\n      <th>Catcher<\/th>\n      <th>CatcherId<\/th>\n      <th>CatcherThrows<\/th>\n      <th>CatcherTeam<\/th>\n      <th>PlayID<\/th>\n      <th>PitchTrajectoryXc0<\/th>\n      <th>PitchTrajectoryXc1<\/th>\n      <th>PitchTrajectoryXc2<\/th>\n      <th>PitchTrajectoryYc0<\/th>\n      <th>PitchTrajectoryYc1<\/th>\n      <th>PitchTrajectoryYc2<\/th>\n      <th>PitchTrajectoryZc0<\/th>\n      <th>PitchTrajectoryZc1<\/th>\n      <th>PitchTrajectoryZc2<\/th>\n      <th>HitSpinAxis<\/th>\n      <th>HitTrajectoryXc0<\/th>\n      <th>HitTrajectoryXc1<\/th>\n      <th>HitTrajectoryXc2<\/th>\n      <th>HitTrajectoryXc3<\/th>\n      <th>HitTrajectoryXc4<\/th>\n      <th>HitTrajectoryXc5<\/th>\n      <th>HitTrajectoryXc6<\/th>\n      <th>HitTrajectoryXc7<\/th>\n      <th>HitTrajectoryXc8<\/th>\n      <th>HitTrajectoryYc0<\/th>\n      <th>HitTrajectoryYc1<\/th>\n      <th>HitTrajectoryYc2<\/th>\n      <th>HitTrajectoryYc3<\/th>\n      <th>HitTrajectoryYc4<\/th>\n      <th>HitTrajectoryYc5<\/th>\n      <th>HitTrajectoryYc6<\/th>\n      <th>HitTrajectoryYc7<\/th>\n      <th>HitTrajectoryYc8<\/th>\n      <th>HitTrajectoryZc0<\/th>\n      <th>HitTrajectoryZc1<\/th>\n      <th>HitTrajectoryZc2<\/th>\n      <th>HitTrajectoryZc3<\/th>\n      <th>HitTrajectoryZc4<\/th>\n      <th>HitTrajectoryZc5<\/th>\n      <th>HitTrajectoryZc6<\/th>\n      <th>HitTrajectoryZc7<\/th>\n      <th>HitTrajectoryZc8<\/th>\n      <th>ThrowSpeed<\/th>\n      <th>PopTime<\/th>\n      <th>ExchangeTime<\/th>\n      <th>TimeToBase<\/th>\n      <th>CatchPositionX<\/th>\n      <th>CatchPositionY<\/th>\n      <th>CatchPositionZ<\/th>\n      <th>ThrowPositionX<\/th>\n      <th>ThrowPositionY<\/th>\n      <th>ThrowPositionZ<\/th>\n      <th>BasePositionX<\/th>\n      <th>BasePositionY<\/th>\n      <th>BasePositionZ<\/th>\n      <th>ThrowTrajectoryXc0<\/th>\n      <th>ThrowTrajectoryXc1<\/th>\n      <th>ThrowTrajectoryXc2<\/th>\n      <th>ThrowTrajectoryYc0<\/th>\n      <th>ThrowTrajectoryYc1<\/th>\n      <th>ThrowTrajectoryYc2<\/th>\n      <th>ThrowTrajectoryZc0<\/th>\n      <th>ThrowTrajectoryZc1<\/th>\n      <th>ThrowTrajectoryZc2<\/th>\n      <th>PitchReleaseConfidence<\/th>\n      <th>PitchLocationConfidence<\/th>\n      <th>PitchMovementConfidence<\/th>\n      <th>HitLaunchConfidence<\/th>\n      <th>HitLandingConfidence<\/th>\n      <th>CatcherThrowCatchConfidence<\/th>\n      <th>CatcherThrowReleaseConfidence<\/th>\n      <th>CatcherThrowLocationConfidence<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,4,5,7,11,15,17,18,19,26,27,29,30,31,32,33,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,76,77,79,83,84,85,93,94,97,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-66954fe412638b740799" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-66954fe412638b740799">{"x":{"filter":"none","vertical":false,"data":[["1","2"],[1,2],["2022-05-25","2022-05-25"],["19:19:21","19:19:35"],[1,1],[1,2],["Silva, Daniel","Silva, Daniel"],[null,null],["Right","Right"],["IDA_CHU","IDA_CHU"],["Lopez, Kobe","Lopez, Kobe"],[null,null],["Right","Right"],["BOI_HAW","BOI_HAW"],["Undefined","Undefined"],[1,1],["Top","Top"],[0,0],[0,0],[0,1],["Fastball","Fastball"],["Changeup","Four-Seam"],["StrikeCalled","StrikeCalled"],["Undefined","Undefined"],["Undefined","Undefined"],["Undefined","Undefined"],[0,0],[0,0],[null,null],[86.38072,87.00951],[-2.640117,-2.243939],[-2.434554,-1.698087],[2168.338646,2222.428517],[224.437164,218.833397],["01:30:00","01:15:00"],[6.32228,6.46702],[1.82606,1.57418],[6.08682,5.97102],[-24.25482,-22.02706],[12.78532,14.97213],[11.43469,11.05438],[1.85486,2.54915],[0.52551,0.92067],[79.63591,79.3226],[-7.164108,-6.38959],[-0.37465,0.289486],[0.438034,0.437792],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[-6.58681,-6.1804],[7.6439,8.72008],[-1.64437,-1.4459],[50,50],[6.10542,6.27709],[4.89003,3.29208],[-125.40318,-126.23639],[-6.53081,-5.61542],[-10.54405,-9.91992],[24.11213,26.9743],[-19.93785,-18.17776],["IDA_CHU","IDA_CHU"],["BOI_HAW","BOI_HAW"],["MelaleucaField","MelaleucaField"],["Independent","Independent"],["PIO","PIO"],["20220525-MelaleucaField-1","20220525-MelaleucaField-1"],["dfd96de0-dc91-11ec-8e16-eb1e2399e25b","e7ef6fc0-dc91-11ec-8e16-eb1e2399e25b"],[86.04917,86.09673],[null,null],[null,null],[6.74481,7.6869],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],["a389663e-a905-4862-a351-74be26fcbd79","a389663e-a905-4862-a351-74be26fcbd79"],["2022-05-26","2022-05-26"],["01:19:21","01:19:35"],["2022-05-26T01:19:21Z","2022-05-26T01:19:35Z"],["2022-05-26T01:19:21Z","2022-05-26T01:19:35Z"],[null,null],["v3","v3"],[444,444],[480,480],[null,null],["West, Brady","West, Brady"],[null,null],["Right","Right"],["IDA_CHU","IDA_CHU"],["417ff9e0-466c-4368-b2c6-7e036a618053","13a2eb0c-e137-41c5-91ad-4f3d6bf3e4fc"],[54.4121,54.52551],[-126.24868,-127.19973],[12.05606,13.48715],[6.32217,6.46604],[-5.83168,-4.96623],[-9.96893,-9.08888],[-1.82232,-1.5698],[5.25976,3.64636],[-5.27202,-4.95996],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],[null,null],["High","High"],["High","High"],["High","High"],[null,null],[null,null],[null,null],[null,null],[null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>PitchNo<\/th>\n      <th>Date<\/th>\n      <th>Time<\/th>\n      <th>PAofInning<\/th>\n      <th>PitchofPA<\/th>\n      <th>Pitcher<\/th>\n      <th>PitcherId<\/th>\n      <th>PitcherThrows<\/th>\n      <th>PitcherTeam<\/th>\n      <th>Batter<\/th>\n      <th>BatterId<\/th>\n      <th>BatterSide<\/th>\n      <th>BatterTeam<\/th>\n      <th>PitcherSet<\/th>\n      <th>Inning<\/th>\n      <th>Top/Bottom<\/th>\n      <th>Outs<\/th>\n      <th>Balls<\/th>\n      <th>Strikes<\/th>\n      <th>TaggedPitchType<\/th>\n      <th>AutoPitchType<\/th>\n      <th>PitchCall<\/th>\n      <th>KorBB<\/th>\n      <th>TaggedHitType<\/th>\n      <th>PlayResult<\/th>\n      <th>OutsOnPlay<\/th>\n      <th>RunsScored<\/th>\n      <th>Notes<\/th>\n      <th>RelSpeed<\/th>\n      <th>VertRelAngle<\/th>\n      <th>HorzRelAngle<\/th>\n      <th>SpinRate<\/th>\n      <th>SpinAxis<\/th>\n      <th>Tilt<\/th>\n      <th>RelHeight<\/th>\n      <th>RelSide<\/th>\n      <th>Extension<\/th>\n      <th>VertBreak<\/th>\n      <th>InducedVertBreak<\/th>\n      <th>HorzBreak<\/th>\n      <th>PlateLocHeight<\/th>\n      <th>PlateLocSide<\/th>\n      <th>ZoneSpeed<\/th>\n      <th>VertApprAngle<\/th>\n      <th>HorzApprAngle<\/th>\n      <th>ZoneTime<\/th>\n      <th>ExitSpeed<\/th>\n      <th>Angle<\/th>\n      <th>Direction<\/th>\n      <th>HitSpinRate<\/th>\n      <th>PositionAt110X<\/th>\n      <th>PositionAt110Y<\/th>\n      <th>PositionAt110Z<\/th>\n      <th>Distance<\/th>\n      <th>LastTrackedDistance<\/th>\n      <th>Bearing<\/th>\n      <th>HangTime<\/th>\n      <th>pfxx<\/th>\n      <th>pfxz<\/th>\n      <th>x0<\/th>\n      <th>y0<\/th>\n      <th>z0<\/th>\n      <th>vx0<\/th>\n      <th>vy0<\/th>\n      <th>vz0<\/th>\n      <th>ax0<\/th>\n      <th>ay0<\/th>\n      <th>az0<\/th>\n      <th>HomeTeam<\/th>\n      <th>AwayTeam<\/th>\n      <th>Stadium<\/th>\n      <th>Level<\/th>\n      <th>League<\/th>\n      <th>GameID<\/th>\n      <th>PitchUID<\/th>\n      <th>EffectiveVelo<\/th>\n      <th>MaxHeight<\/th>\n      <th>MeasuredDuration<\/th>\n      <th>SpeedDrop<\/th>\n      <th>PitchLastMeasuredX<\/th>\n      <th>PitchLastMeasuredY<\/th>\n      <th>PitchLastMeasuredZ<\/th>\n      <th>ContactPositionX<\/th>\n      <th>ContactPositionY<\/th>\n      <th>ContactPositionZ<\/th>\n      <th>GameUID<\/th>\n      <th>UTCDate<\/th>\n      <th>UTCTime<\/th>\n      <th>LocalDateTime<\/th>\n      <th>UTCDateTime<\/th>\n      <th>AutoHitType<\/th>\n      <th>System<\/th>\n      <th>HomeTeamForeignID<\/th>\n      <th>AwayTeamForeignID<\/th>\n      <th>GameForeignID<\/th>\n      <th>Catcher<\/th>\n      <th>CatcherId<\/th>\n      <th>CatcherThrows<\/th>\n      <th>CatcherTeam<\/th>\n      <th>PlayID<\/th>\n      <th>PitchTrajectoryXc0<\/th>\n      <th>PitchTrajectoryXc1<\/th>\n      <th>PitchTrajectoryXc2<\/th>\n      <th>PitchTrajectoryYc0<\/th>\n      <th>PitchTrajectoryYc1<\/th>\n      <th>PitchTrajectoryYc2<\/th>\n      <th>PitchTrajectoryZc0<\/th>\n      <th>PitchTrajectoryZc1<\/th>\n      <th>PitchTrajectoryZc2<\/th>\n      <th>HitSpinAxis<\/th>\n      <th>HitTrajectoryXc0<\/th>\n      <th>HitTrajectoryXc1<\/th>\n      <th>HitTrajectoryXc2<\/th>\n      <th>HitTrajectoryXc3<\/th>\n      <th>HitTrajectoryXc4<\/th>\n      <th>HitTrajectoryXc5<\/th>\n      <th>HitTrajectoryXc6<\/th>\n      <th>HitTrajectoryXc7<\/th>\n      <th>HitTrajectoryXc8<\/th>\n      <th>HitTrajectoryYc0<\/th>\n      <th>HitTrajectoryYc1<\/th>\n      <th>HitTrajectoryYc2<\/th>\n      <th>HitTrajectoryYc3<\/th>\n      <th>HitTrajectoryYc4<\/th>\n      <th>HitTrajectoryYc5<\/th>\n      <th>HitTrajectoryYc6<\/th>\n      <th>HitTrajectoryYc7<\/th>\n      <th>HitTrajectoryYc8<\/th>\n      <th>HitTrajectoryZc0<\/th>\n      <th>HitTrajectoryZc1<\/th>\n      <th>HitTrajectoryZc2<\/th>\n      <th>HitTrajectoryZc3<\/th>\n      <th>HitTrajectoryZc4<\/th>\n      <th>HitTrajectoryZc5<\/th>\n      <th>HitTrajectoryZc6<\/th>\n      <th>HitTrajectoryZc7<\/th>\n      <th>HitTrajectoryZc8<\/th>\n      <th>ThrowSpeed<\/th>\n      <th>PopTime<\/th>\n      <th>ExchangeTime<\/th>\n      <th>TimeToBase<\/th>\n      <th>CatchPositionX<\/th>\n      <th>CatchPositionY<\/th>\n      <th>CatchPositionZ<\/th>\n      <th>ThrowPositionX<\/th>\n      <th>ThrowPositionY<\/th>\n      <th>ThrowPositionZ<\/th>\n      <th>BasePositionX<\/th>\n      <th>BasePositionY<\/th>\n      <th>BasePositionZ<\/th>\n      <th>ThrowTrajectoryXc0<\/th>\n      <th>ThrowTrajectoryXc1<\/th>\n      <th>ThrowTrajectoryXc2<\/th>\n      <th>ThrowTrajectoryYc0<\/th>\n      <th>ThrowTrajectoryYc1<\/th>\n      <th>ThrowTrajectoryYc2<\/th>\n      <th>ThrowTrajectoryZc0<\/th>\n      <th>ThrowTrajectoryZc1<\/th>\n      <th>ThrowTrajectoryZc2<\/th>\n      <th>PitchReleaseConfidence<\/th>\n      <th>PitchLocationConfidence<\/th>\n      <th>PitchMovementConfidence<\/th>\n      <th>HitLaunchConfidence<\/th>\n      <th>HitLandingConfidence<\/th>\n      <th>CatcherThrowCatchConfidence<\/th>\n      <th>CatcherThrowReleaseConfidence<\/th>\n      <th>CatcherThrowLocationConfidence<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,4,5,7,11,15,17,18,19,26,27,29,30,31,32,33,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,76,77,79,83,84,85,93,94,97,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>all_games <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> <span class="fu">filter</span>(PlateLocSide <span class="sc">!=</span> <span class="fu">is.na</span>(PlateLocSide) </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>                                  <span class="sc">&amp;</span> PlateLocHeight <span class="sc">!=</span> <span class="fu">is.na</span>(PlateLocHeight)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">InZone =</span> <span class="fu">if_else</span>(PlateLocSide <span class="sc">&gt;=</span> <span class="sc">-</span><span class="fl">0.75</span> <span class="sc">&amp;</span> PlateLocSide <span class="sc">&lt;=</span> <span class="fl">0.75</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>                          <span class="sc">&amp;</span> PlateLocHeight <span class="sc">&gt;=</span> <span class="fl">1.65</span> <span class="sc">&amp;</span> PlateLocHeight <span class="sc">&lt;=</span> <span class="fl">3.65</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>                          , <span class="cn">TRUE</span>, <span class="cn">FALSE</span> )) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">PitchGroup =</span> <span class="fu">case_when</span>(TaggedPitchType <span class="sc">==</span> <span class="st">"Fastball"</span> <span class="sc">~</span> <span class="st">"Fastballs"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                                , TaggedPitchType <span class="sc">==</span> <span class="st">"Sinker"</span> <span class="sc">~</span> <span class="st">"Fastballs"</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>                                , TaggedPitchType <span class="sc">==</span> <span class="st">"Cutter"</span> <span class="sc">~</span> <span class="st">"Fastballs"</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>                                , TaggedPitchType <span class="sc">==</span> <span class="st">"Slider"</span> <span class="sc">~</span> <span class="st">"Breaking"</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>                                , TaggedPitchType <span class="sc">==</span> <span class="st">"Curveball"</span> <span class="sc">~</span> <span class="st">"Breaking"</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>                                , TaggedPitchType <span class="sc">==</span> <span class="st">"ChangeUp"</span> <span class="sc">~</span> <span class="st">"OffSpeed"</span> </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>                                , TaggedPitchType <span class="sc">==</span> <span class="st">"Splitter"</span> <span class="sc">~</span> <span class="st">'OffSpeed'</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>                                , TaggedPitchType <span class="sc">==</span> <span class="st">"Knuckleball"</span> <span class="sc">~</span> <span class="st">'OffSpeed'</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>                                , <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">'Other'</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">MissedCall =</span> <span class="fu">case_when</span>(PitchCall <span class="sc">==</span> <span class="st">"BallCalled"</span> <span class="sc">&amp;</span> InZone <span class="sc">==</span> <span class="cn">FALSE</span> <span class="sc">~</span> <span class="cn">FALSE</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>                                , PitchCall <span class="sc">==</span> <span class="st">"StrikeCalled"</span> <span class="sc">&amp;</span> InZone <span class="sc">==</span> <span class="cn">FALSE</span> <span class="sc">~</span> <span class="cn">TRUE</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>                                , PitchCall <span class="sc">==</span> <span class="st">"BallCalled"</span> <span class="sc">&amp;</span> InZone <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">TRUE</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>                                , PitchCall <span class="sc">==</span> <span class="st">"StrikeCalled"</span> <span class="sc">&amp;</span> InZone <span class="sc">==</span> <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">FALSE</span>))</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>total_inplay <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Pitcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">==</span> <span class="st">"InPlay"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">total_inplay =</span> n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <p>Each row is a play in the game with the associated categorical and numerical information. As a trackman operator you are responsbile for making sure, before the game starts, that the roster is inputted properly. Then, as the game is happening, you are responsible for tagging each play with the appropriate categorical data so it is associated with its numerical data that trackman gets. This tagging process are from columns inning to notes.</p>
 </section>
@@ -196,62 +297,184 @@ ul.task-list li input[type="checkbox"] {
 <section id="pitcher-metrics" class="level2">
 <h2 class="anchored" data-anchor-id="pitcher-metrics">Pitcher Metrics</h2>
 <p><span class="math display">\[
-\text{Ground Ball Perc} = \frac{Ground Balls} {Pitches Hit In Play}
+\text{Ground Ball Perc} = \frac{Ground\; Balls} {Pitches\; Hit\; In\; Play}
 \]</span></p>
 <ul>
-<li>A higher GB % is desired since it is expected to result in outs.</li>
+<li><p>A higher GB % is desired since it is expected to result in outs.</p></li>
+<li><p>Code to calculate Ground Ball Perc</p></li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>total_gb <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Pitcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(TaggedHitType <span class="sc">==</span> <span class="st">"GroundBall"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">total_gb =</span> n)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>all_pitcher_gb_perc <span class="ot">&lt;-</span> total_gb <span class="sc">%&gt;%</span> </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(total_inplay, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Pitcher'</span><span class="ot">=</span><span class="st">'Pitcher'</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_inplay)) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">gb_perc =</span> <span class="fu">round</span>((total_gb <span class="sc">/</span> total_inplay) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(total_inplay <span class="sc">&gt;</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <p><span class="math display">\[
-\text{Fly Ball Perc} = \frac{Fly Balls} {Pitches Hit In Play}
+\text{Fly Ball Perc} = \frac{Fly\; Balls} {Pitches\; Hit\; In\; Play}
 \]</span></p>
 <ul>
-<li>A lower FB % is desired as well</li>
+<li><p>A lower FB % is desired as well</p></li>
+<li><p>Code to calculate Fly Ball Perc</p></li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>total_fb <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Pitcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(TaggedHitType <span class="sc">==</span> <span class="st">"FlyBall"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">total_fb =</span> n)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>all_pitcher_fb_perc <span class="ot">&lt;-</span> total_fb <span class="sc">%&gt;%</span> </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(total_inplay, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Pitcher'</span><span class="ot">=</span><span class="st">'Pitcher'</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_inplay)) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">fb_perc =</span> <span class="fu">round</span>((total_fb <span class="sc">/</span> total_inplay) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(total_inplay <span class="sc">&gt;</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <p><span class="math display">\[
-\text{1st Pitch Strike Perc} = \frac{1st Called Strike}{Total 1st Pitches}
+\text{1st Pitch Strike Perc} = \frac{1st\; Called\; Strike}{Total\; 1st\; Pitches}
 \]</span></p>
 <ul>
-<li>A Higher 1 pitch strike % is desired and shows the control a pitcher has.</li>
+<li><p>A Higher 1 pitch strike % is desired and shows the control a pitcher has.</p></li>
+<li><p>Code to calculate 1st Pitch Strike Perc</p></li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>total_first_pitch <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Balls <span class="sc">==</span> <span class="dv">0</span> <span class="sc">&amp;</span> Strikes <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Pitcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">first_pitch_count =</span> n)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>total_first_pitch_strike <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Balls <span class="sc">==</span> <span class="dv">0</span> <span class="sc">&amp;</span> Strikes <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"StrikeCalled"</span>, <span class="st">"StrikeSwinging"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Pitcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">strike =</span> n)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>all_pitcher_first_pitch <span class="ot">&lt;-</span> total_first_pitch <span class="sc">%&gt;%</span> </span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(total_first_pitch_strike, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Pitcher'</span> <span class="ot">=</span> <span class="st">'Pitcher'</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(first_pitch_count)) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(first_pitch_count <span class="sc">&gt;</span> <span class="dv">30</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">first_pitch_strike_perc =</span> <span class="fu">round</span>(strike<span class="sc">/</span>first_pitch_count,<span class="dv">4</span>)<span class="sc">*</span><span class="dv">100</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  .[,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">4</span>)] <span class="co"># reordering columns </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <p><span class="math display">\[
-\text{KZone Perc} = \frac{Total In Play OR Inside Strike Zone}{Total Pitches}
+\text{KZone Perc} = \frac{Total\; In\; Play\; OR\; Inside\; Strike\; Zone}{Total\; Pitches}
 \]</span></p>
 <ul>
-<li>This metric shows the overall control the pitchers has over his pitches and ability to hit the specific spot.</li>
+<li><p>This metric shows the overall control the pitchers has over his pitches and ability to hit the specific spot.</p></li>
+<li><p>Code to calculate KZone Perc</p></li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>total_pitch_count <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Pitcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">total_pitches =</span> n)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>kzone_count <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PlateLocSide <span class="sc">&gt;=</span> <span class="sc">-</span><span class="fl">0.75</span> <span class="sc">&amp;</span> PlateLocSide <span class="sc">&lt;=</span> <span class="fl">0.75</span> </span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>         <span class="sc">&amp;</span> PlateLocHeight <span class="sc">&gt;=</span> <span class="fl">1.65</span> <span class="sc">&amp;</span> PlateLocHeight <span class="sc">&lt;=</span> <span class="fl">3.65</span> <span class="sc">|</span> PitchCall <span class="sc">==</span> <span class="st">'InPlay'</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Pitcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">total_kzone =</span> n)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># combine and get percent</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>all_pitcher_kzone <span class="ot">&lt;-</span> total_pitch_count <span class="sc">%&gt;%</span> </span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(kzone_count, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Pitcher'</span><span class="ot">=</span><span class="st">'Pitcher'</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_pitches)) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(total_pitches <span class="sc">&gt;</span> <span class="dv">30</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  .[,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">2</span>)] <span class="sc">%&gt;%</span> </span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">kzone_perc =</span> <span class="fu">round</span>(total_kzone<span class="sc">/</span>total_pitches, <span class="dv">4</span>)<span class="sc">*</span><span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <p><span class="math display">\[
-\text{Chase Against Perc} = \frac{Strike Swinging}{Total Out of Zone}
+\text{Chase Against Perc} = \frac{Strike\; Swinging}{Total\; Out\; of\; Zone}
 \]</span></p>
 <ul>
-<li>Chase against % is not a direct correlation to the movement of a pitch but does the deceptiveness in a pitchers pitch.</li>
+<li><p>Chase against % is not a direct correlation to the movement of a pitch but does the deceptiveness in a pitchers pitch.</p></li>
+<li><p>Code to calculate Chase Against Perc</p></li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>total_out_zone <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(InZone <span class="sc">==</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Pitcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">total_out_zone =</span> n)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>total_chase <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(InZone <span class="sc">==</span> <span class="cn">FALSE</span> <span class="sc">&amp;</span> PitchCall <span class="sc">==</span> <span class="st">'StrikeSwinging'</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Pitcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">total_chase_count =</span> n) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(total_chase_count <span class="sc">!=</span> <span class="fu">is.na</span>(total_chase_count)) </span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>all_pitcher_chase_against <span class="ot">&lt;-</span> total_out_zone <span class="sc">%&gt;%</span> </span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(total_chase, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Pitcher'</span><span class="ot">=</span><span class="st">'Pitcher'</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_out_zone)) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(total_out_zone <span class="sc">&gt;</span> <span class="dv">30</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>  .[,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">2</span>)] <span class="sc">%&gt;%</span> </span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">chase_against_perc =</span> <span class="fu">round</span>(total_chase_count<span class="sc">/</span>total_out_zone, <span class="dv">4</span>)<span class="sc">*</span><span class="dv">100</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(chase_against_perc <span class="sc">!=</span> <span class="fu">is.na</span>(chase_against_perc))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <p>Along with:</p>
 <ul>
 <li>exit velo against</li>
+<li>Code to calculate Exit Velo against</li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>pitcher_exit_speed_avg <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">==</span> <span class="st">"InPlay"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(ExitSpeed <span class="sc">!=</span> <span class="fu">is.na</span>(ExitSpeed)) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Pitcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">avg_exit_speed =</span>  <span class="fu">round</span>(<span class="fu">mean</span>(ExitSpeed), <span class="dv">2</span>))</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>all_pitcher_exit_velo <span class="ot">&lt;-</span> pitcher_exit_speed_avg <span class="sc">%&gt;%</span> </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(total_inplay, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Pitcher'</span><span class="ot">=</span><span class="st">'Pitcher'</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_inplay)) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(total_inplay <span class="sc">&gt;</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <ul>
 <li>vertical launch angle against</li>
+<li>Code to calculate vertical launch angle against</li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>pitcher_avg_exit_angle <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">==</span> <span class="st">"InPlay"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Angle <span class="sc">!=</span> <span class="fu">is.na</span>(Angle)) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Pitcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">avg_angle =</span> <span class="fu">round</span>(<span class="fu">mean</span>(Angle), <span class="dv">2</span>))</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>all_pitcher_angle <span class="ot">&lt;-</span> pitcher_avg_exit_angle <span class="sc">%&gt;%</span> </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(total_inplay, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Pitcher'</span><span class="ot">=</span><span class="st">'Pitcher'</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_inplay)) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(total_inplay <span class="sc">&gt;</span> <span class="dv">30</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <p>Which I decide to omit a formula since these are just averages.</p>
 </section>
@@ -261,25 +484,83 @@ ul.task-list li input[type="checkbox"] {
 <li>Average Vertical Launch Angle</li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>all_batters_vert_avg <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">==</span> <span class="st">"InPlay"</span> <span class="sc">&amp;</span> Angle <span class="sc">!=</span> <span class="fu">is.na</span>(Angle)) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Batter) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">avg_vert_angle =</span> <span class="fu">round</span>(<span class="fu">mean</span>(Angle), <span class="dv">1</span>))</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>all_batters_inplay <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">==</span> <span class="st">"InPlay"</span> <span class="sc">&amp;</span> Angle <span class="sc">!=</span> <span class="fu">is.na</span>(Angle)) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Batter) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="st">'Count'</span> <span class="ot">=</span> n) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Count <span class="sc">&gt;</span> <span class="dv">30</span>)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="co"># joining datasets</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>batter_vert_angle <span class="ot">&lt;-</span> all_batters_inplay <span class="sc">%&gt;%</span> </span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(all_batters_vert_avg, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Batter'</span><span class="ot">=</span><span class="st">'Batter'</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(Count))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <ul>
 <li>Max Exit Velo</li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>max_velo <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(ExitSpeed <span class="sc">!=</span> <span class="fu">is.na</span>(ExitSpeed)) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Batter) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">max_ev =</span> <span class="fu">round</span>(<span class="fu">max</span>(ExitSpeed),<span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <ul>
 <li>Percent of Batted Balls over 95 mph</li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>bb_count <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">==</span> <span class="st">"InPlay"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Batter) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">total_inplay =</span> n) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(total_inplay <span class="sc">&gt;</span> <span class="dv">30</span>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Batters total &lt; 95 mph</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>bb_95_plus_count <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">==</span> <span class="st">"InPlay"</span> <span class="sc">&amp;</span> ExitSpeed <span class="sc">&gt;=</span> <span class="dv">95</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Batter) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">total_95_plus =</span> n)</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Batters percent</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>all_bb_95_plus <span class="ot">&lt;-</span> bb_95_plus_count <span class="sc">%&gt;%</span> </span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(bb_count, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Batter'</span><span class="ot">=</span><span class="st">'Batter'</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">bb_plus95_perc =</span> <span class="fu">round</span>((total_95_plus<span class="sc">/</span>total_inplay) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_inplay))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <ul>
 <li>Percent of Batted Balls over 105 mph</li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>bb_105_plus_count <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">==</span> <span class="st">"InPlay"</span> <span class="sc">&amp;</span> ExitSpeed <span class="sc">&gt;=</span> <span class="dv">105</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Batter) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">total_105_plus =</span> n)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Batters percent</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>all_bb_105_plus <span class="ot">&lt;-</span> bb_105_plus_count <span class="sc">%&gt;%</span> </span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(bb_count, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Batter'</span><span class="ot">=</span><span class="st">'Batter'</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">bb_plus105_perc =</span> <span class="fu">round</span>((total_105_plus<span class="sc">/</span>total_inplay) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(total_inplay))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <p>This might seem redundant and I was told by a League Executive who had conversations with other MLB teams that this one was not something they really cared about and percent of Batted Balls over 95 mph was more important.</p>
 <ul>
@@ -287,19 +568,103 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Also know as whiff rate, is understood as the number of times a batter has strike swinging regardless of it the pitch was inside or outside of the zone.</p>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>total_out_of_zone <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(InZone <span class="sc">==</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Batter) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">OutOfZone =</span> n)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>total_out_of_zone_ss <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(InZone <span class="sc">==</span> <span class="cn">FALSE</span> <span class="sc">&amp;</span> PitchCall <span class="sc">==</span> <span class="st">"StrikeSwinging"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Batter) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">ss_OutOfZone =</span> n)</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># combining datasets</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>all_chase_perc <span class="ot">&lt;-</span> total_out_of_zone <span class="sc">%&gt;%</span> </span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(total_out_of_zone_ss, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Batter'</span><span class="ot">=</span><span class="st">'Batter'</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>  .[,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">2</span>)]</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>all_chase_perc[<span class="fu">is.na</span>(all_chase_perc)] <span class="ot">&lt;-</span> <span class="dv">0</span> </span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>all_chase_perc <span class="ot">&lt;-</span> all_chase_perc <span class="sc">%&gt;%</span> </span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">chase_perc =</span> <span class="fu">round</span>((ss_OutOfZone<span class="sc">/</span>OutOfZone) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>))</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>all_chase_perc <span class="ot">&lt;-</span> all_chase_perc <span class="sc">%&gt;%</span> </span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(OutOfZone <span class="sc">&gt;</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <ul>
 <li>Miss percentage</li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Denominator - total pitches Swung at</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>pitches_swung <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"StrikeSwinging"</span>, <span class="st">"FoulBall"</span>, <span class="st">"InPlay"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Batter) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">swung_at_count =</span> n)</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Numerator - total Missed</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>pitches_missed <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">==</span> <span class="st">"StrikeSwinging"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Batter) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">missed_count =</span> n)</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Join both Datasets</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>all_miss_perc <span class="ot">&lt;-</span> pitches_missed <span class="sc">%&gt;%</span> </span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">right_join</span>(pitches_swung, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Batter'</span><span class="ot">=</span><span class="st">'Batter'</span>)) </span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>all_miss_perc[<span class="fu">is.na</span>(all_miss_perc)] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>all_miss_perc <span class="ot">&lt;-</span> all_miss_perc <span class="sc">%&gt;%</span> </span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">miss_perc =</span> <span class="fu">round</span>((missed_count <span class="sc">/</span> swung_at_count)<span class="sc">*</span><span class="dv">100</span>, <span class="dv">1</span>)) </span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>all_miss_perc <span class="ot">&lt;-</span> all_miss_perc <span class="sc">%&gt;%</span> </span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(swung_at_count <span class="sc">&gt;</span> <span class="dv">30</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <ul>
 <li>InZone Miss percentage</li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># filtering to in zone dataset</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>in_zone <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(InZone <span class="sc">==</span> <span class="cn">TRUE</span>) </span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Denominator - total pitches Swung at</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>iz_pitches_swung <span class="ot">&lt;-</span> in_zone <span class="sc">%&gt;%</span> </span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"StrikeSwinging"</span>, <span class="st">"FoulBall"</span>, <span class="st">"InPlay"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Batter) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">iz_swung_count =</span> n)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Numerator - total swung at</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>iz_pitches_missed <span class="ot">&lt;-</span> in_zone <span class="sc">%&gt;%</span> </span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PitchCall <span class="sc">==</span> <span class="st">'StrikeSwinging'</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Batter) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">iz_miss_count =</span> n)</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Join datasets together</span></span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>all_InZone_perc <span class="ot">&lt;-</span> iz_pitches_missed <span class="sc">%&gt;%</span> </span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">right_join</span>(iz_pitches_swung, <span class="at">by=</span><span class="fu">c</span>(<span class="st">'Batter'</span><span class="ot">=</span><span class="st">'Batter'</span>))</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>all_InZone_perc[<span class="fu">is.na</span>(all_InZone_perc)] <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a>all_InZone_perc <span class="ot">&lt;-</span> all_InZone_perc <span class="sc">%&gt;%</span> </span>
+<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">InZone_miss_perc =</span> <span class="fu">round</span>( (iz_miss_count <span class="sc">/</span> iz_swung_count) <span class="sc">*</span><span class="dv">100</span>, <span class="dv">1</span>))</span>
+<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a>all_InZone_perc <span class="ot">&lt;-</span> all_InZone_perc <span class="sc">%&gt;%</span> </span>
+<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(iz_swung_count <span class="sc">&gt;</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 <section id="catcher-metrics" class="level2">
@@ -308,13 +673,47 @@ ul.task-list li input[type="checkbox"] {
 <li>Pop Time MLB Definition - “represents the time elapsed from the moment the pitch hits the catcher’s mitt to the moment the intended fielder is projected to receive his throw at the center of the base.” (https://www.mlb.com/glossary/statcast/pop-time)</li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pop time </span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>poptime_count <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PopTime <span class="sc">!=</span> <span class="fu">is.na</span>(PopTime)) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Catcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Count =</span> n)</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>poptime_avg <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PopTime <span class="sc">!=</span> <span class="fu">is.na</span>(PopTime)) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Catcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">avg_poptime =</span> <span class="fu">round</span>(<span class="fu">mean</span>(PopTime), <span class="dv">1</span>))</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a><span class="co"># join datasets</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>all_poptime <span class="ot">&lt;-</span> poptime_count <span class="sc">%&gt;%</span> </span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(poptime_avg, <span class="at">by=</span><span class="fu">c</span>(<span class="st">'Catcher'</span><span class="ot">=</span><span class="st">'Catcher'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <ul>
 <li>Throw Speed Trackman Definition - “Speed at release of throw from catcher”</li>
 </ul>
 <div class="cell">
-
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>throwspeed_count <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(ThrowSpeed <span class="sc">!=</span> <span class="fu">is.na</span>(ThrowSpeed)) <span class="sc">%&gt;%</span> </span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Catcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">Count =</span> n)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>throwspeed_avg <span class="ot">&lt;-</span> all_games <span class="sc">%&gt;%</span> </span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(ThrowSpeed <span class="sc">!=</span> <span class="fu">is.na</span>(ThrowSpeed)) <span class="sc">%&gt;%</span> </span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Catcher) <span class="sc">%&gt;%</span> </span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">avg_throwspeed =</span> <span class="fu">round</span>(<span class="fu">mean</span>(ThrowSpeed), <span class="dv">1</span>))</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="co"># join datasets</span></span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a>all_throwspeed <span class="ot">&lt;-</span> throwspeed_count <span class="sc">%&gt;%</span> </span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(throwspeed_avg, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'Catcher'</span><span class="ot">=</span><span class="st">'Catcher'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <p>The scout did talk about catcher framing and its increase in popularity, but I have not had the time to think through how I want to calculate it or research how it is calculated (which will probably just be number of pitches outside zone called for strike within a certain range) and I know you can visualize it as well, I just haven’t taken the time to do so.</p>
 <p>As I noted most of these metrics it is easy to see that by ordering the values for each player in descending order or ascending order you can then assign a rank to them. I combined most values and then ordered them to see who had the lowest score indicating that this player is the better overall pitcher in these metrics. the reason I said “most” is becuase some would have required more thought process to determine the best way to rank a player rather than descending and ascending. Those metrics for batters, Vertical Launch Angle and Batted Balls over 105 percent. For Vertical Launch Angle, if you are familiar with the SABRmetric of Barrel then you know launch angle has sweet spot. So to bin values and then give a rank based off of that is possible but I choose to leave off as I was going for something quick. For Batted Balls over 105 mph percent, as stated this one is not as important and many players did not have a hit that falls into this category. The results can be seen below:</p>
@@ -347,6 +746,8 @@ ul.task-list li input[type="checkbox"] {
 <li>A pitch classification model</li>
 </ul>
 
+
+<!-- -->
 
 </section>
 
@@ -416,6 +817,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
   function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
@@ -483,7 +935,514 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<pre class="markdown" data-shortcodes="false"><code>---
+title: "The Intro and Top Hitters, Batters and Catchers in the Pioneer Baseball League"
+author: "Matthew Goodsell"
+date: "2023-01-28"
+categories: [Baseball, SABRmetrics, Analysis]
+freeze: True
+format: 
+  html: 
+    code-fold: true
+    code-tools: true
+---
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning=FALSE)
+```
+
+# How I got here
+
+Chances are you have heard or seen the movie Moneyball. You might have even read the book like I have. If you are a sports fan and have a passion for data then you would have enjoyed the movie and been amazed at the use of analytics and maybe even more amazed at the push back of it in the movie. For me, I know it is easy to wonder why the numbers can be useful unless I look at it through the analytical eyes it requires. Chances are you probably have not heard of the the Idaho Falls Chukars let alone the Pioneer Baseball League. This post is intended to be more of an introduction to my journey and beginnings with the League and exploration of the use of analytics I have been doing and will do for them.
+
+## Background
+
+Before I get going it will be useful to have some context. The Chukars used to be a Minor League affilate with Kansas City Royals until the MLB restructured their minor leagues in 2020 leaving the Chukars and Pioneer League unaffialted and consequently, independent. This eventually opened the door for me, two years later, which I will get too. The Pioneer League now is an Offical Partner League to the MLB. Once the affilation with the Royals ended for the Chukars, a 20,000 dollar piece of equipment was just left in the stadium. That piece of equipment is known as Trackman, a black box that seats mounted to the press box directly above home plate. Covid resulted in no games played in 2020...quite the year for the Chukars and the League. Through reaching out to the Chukars I was able to operate Trackman during the 2022 season and that is where my story begins with the League. 
+
+A little more on the Chukars, they play at Melaleuca Field in Idaho Falls. If you are ever in Idaho Falls during a game, it is worth attending on a nice summer evening. Pro tip, if you come, don't park to close to the ballpark or else...
+
+![](foul_ball_windshield.JPG)
+
+I was in my senior year at Brigham Young University - Idaho located in Rexburg just a 25 minute drive from the ballpark. I had heard about the Chukars but never attended one of their games. I actually never grew up playing baseball. One reason why I didn't go to a game. It's not that I don't like to watch, I have been to a Washington Nationals game and Philadelphia Phillies game as I am from Virginia. Anyways, I had taken a couple math classes from a professor who I had developed a good relationship with. It was a fateful conversation we had one day in the hallway were I opened up to him about where I was and what I really wanted to do with my Major in Data Science. He had the crazy idea to contact the Chukars which took me a minute to remember they are the baseball team in Idaho Falls. We both followed up on it and got to talk to the assistant GM for them. Eventually that lead to me being the trackman operator for the Chukars during the 2022 season. 
+
+More about the data coming from Trackman. Trackman is actually in all the MLB ballparks and a main source of MLB teams data. The v3 version, I got the chance to operate, returns 167 different variables on batters, pitchers and catchers. Here is a snipbit of some of the variables: 
+
+```{r tm_data}
+# show only some columns 
+pacman::p_load(tidyverse, DT) 
+
+all_games &lt;- read_csv('../../data/unverified_all_games.csv')
+
+
+all_games_2 &lt;- all_games %&gt;% .[1:2,]
+
+DT::datatable(all_games_2)
+```
+
+```{r tm_data_prep}
+all_games &lt;- all_games %&gt;% filter(PlateLocSide != is.na(PlateLocSide) 
+                                  &amp; PlateLocHeight != is.na(PlateLocHeight)) %&gt;% 
+  mutate(InZone = if_else(PlateLocSide &gt;= -0.75 &amp; PlateLocSide &lt;= 0.75 
+                          &amp; PlateLocHeight &gt;= 1.65 &amp; PlateLocHeight &lt;= 3.65
+                          , TRUE, FALSE )) %&gt;% 
+  mutate(PitchGroup = case_when(TaggedPitchType == "Fastball" ~ "Fastballs"
+                                , TaggedPitchType == "Sinker" ~ "Fastballs"
+                                , TaggedPitchType == "Cutter" ~ "Fastballs"
+                                , TaggedPitchType == "Slider" ~ "Breaking"
+                                , TaggedPitchType == "Curveball" ~ "Breaking"
+                                , TaggedPitchType == "ChangeUp" ~ "OffSpeed" 
+                                , TaggedPitchType == "Splitter" ~ 'OffSpeed'
+                                , TaggedPitchType == "Knuckleball" ~ 'OffSpeed'
+                                , TRUE ~ 'Other')) %&gt;% 
+  mutate(MissedCall = case_when(PitchCall == "BallCalled" &amp; InZone == FALSE ~ FALSE
+                                , PitchCall == "StrikeCalled" &amp; InZone == FALSE ~ TRUE
+                                , PitchCall == "BallCalled" &amp; InZone == TRUE ~ TRUE
+                                , PitchCall == "StrikeCalled" &amp; InZone == TRUE ~ FALSE))
+
+total_inplay &lt;- all_games %&gt;% 
+  group_by(Pitcher) %&gt;% 
+  filter(PitchCall == "InPlay") %&gt;% 
+  count() %&gt;% 
+  rename(total_inplay = n)
+```
+Each row is a play in the game with the associated categorical and numerical information. As a trackman operator you are responsbile for making sure, before the game starts, that the roster is inputted properly. Then, as the game is happening, you are responsible for tagging each play with the appropriate categorical data so it is associated with its numerical data that trackman gets. This tagging process are from columns inning to notes. 
+
+# League needs
+
+With only five of the ten teams in the League having trackman in the stadium and operating it and attending most every game or them (those I didn't my professor took over the trackman duties), I became curious how the league was using the data. Much of my focus has been on how the League can use the data rather than how the Chukars or an individual team can use it to be of benefit to them and provide a competitive edge. I came to understand firsthand the divide in baseball that is shown in Moneyball between those who accept advanced analytics and those who are more "old School" and trust there eyes to evaluate the play on the field. So this and the way I think, influenced my perspective on how to use the data to benefit the league and its players and umpires. After all, if they are a development league they need to be doing all they can to help the players progress and utilize what resources they have.
+
+During one home stand early on in the season I had the privilege of talking with an MLB scout who eventually shared with me some key Trackman Metrics teams look at. While I throughly enjoyed that conversation I can't remember to much of the detail and won't get into it here as it is not extremely relavant. 
+
+As I thought about the league and the data and from conversations with my professor, I found out who the league executives I should email were and did so. This lead to a great meeting which subsequently lead to other meetings and being asked to the be the Chair of the Data Analytics working group or committee during the offseason. 
+
+# My Analysis
+
+While the Leauge has its needs for the data and I am working to provide some resources for them, I had my own projects I wanted to work with the data and the metrics I got from the scout.
+
+To find out who the better Pitchers, Batters, and Catchers are around the league, I took the metrics the scout gave me and decide to create a ranking summation model to determine which ones were the best overall players for their respective positions. I know there are many SABRmetrics that can calculated and more advanced ways to doing something like this, but I needed something fast and something simple.
+
+The following metrics and formula's are:
+
+## Pitcher Metrics
+
+$$
+\text{Ground Ball Perc} = \frac{Ground\; Balls} {Pitches\; Hit\; In\; Play}
+$$
+
+- A higher GB % is desired since it is expected to result in outs.
+
+- Code to calculate Ground Ball Perc
+
+```{r gb_perc}
+total_gb &lt;- all_games %&gt;% 
+  group_by(Pitcher) %&gt;% 
+  filter(TaggedHitType == "GroundBall") %&gt;%
+  count() %&gt;% 
+  rename(total_gb = n)
+
+all_pitcher_gb_perc &lt;- total_gb %&gt;% 
+  left_join(total_inplay, by = c('Pitcher'='Pitcher')) %&gt;% 
+  arrange(desc(total_inplay)) %&gt;% 
+  mutate(gb_perc = round((total_gb / total_inplay) * 100, 2)) %&gt;% 
+  filter(total_inplay &gt; 30)
+```
+
+$$
+\text{Fly Ball Perc} = \frac{Fly\; Balls} {Pitches\; Hit\; In\; Play}
+$$
+
+- A lower FB % is desired as well
+
+- Code to calculate Fly Ball Perc
+
+```{r fb_perc}
+total_fb &lt;- all_games %&gt;% 
+  group_by(Pitcher) %&gt;% 
+  filter(TaggedHitType == "FlyBall") %&gt;% 
+  count() %&gt;% 
+  rename(total_fb = n)
+
+all_pitcher_fb_perc &lt;- total_fb %&gt;% 
+  left_join(total_inplay, by = c('Pitcher'='Pitcher')) %&gt;% 
+  arrange(desc(total_inplay)) %&gt;% 
+  mutate(fb_perc = round((total_fb / total_inplay) * 100, 2)) %&gt;% 
+  filter(total_inplay &gt; 30)
+```
+
+$$
+\text{1st Pitch Strike Perc} = \frac{1st\; Called\; Strike}{Total\; 1st\; Pitches}
+$$
+
+- A Higher 1 pitch strike % is desired and shows the control a pitcher has. 
+
+- Code to calculate 1st Pitch Strike Perc
+
+```{r 1st_pitch_k_perc}
+total_first_pitch &lt;- all_games %&gt;% 
+  filter(Balls == 0 &amp; Strikes == 0) %&gt;% 
+  group_by(Pitcher) %&gt;% 
+  count() %&gt;% 
+  rename(first_pitch_count = n)
+
+total_first_pitch_strike &lt;- all_games %&gt;% 
+  filter(Balls == 0 &amp; Strikes == 0) %&gt;% 
+  filter(PitchCall %in% c("StrikeCalled", "StrikeSwinging")) %&gt;% 
+  group_by(Pitcher) %&gt;% 
+  count() %&gt;% 
+  rename(strike = n)
+
+all_pitcher_first_pitch &lt;- total_first_pitch %&gt;% 
+  left_join(total_first_pitch_strike, by = c('Pitcher' = 'Pitcher')) %&gt;% 
+  arrange(desc(first_pitch_count)) %&gt;% 
+  filter(first_pitch_count &gt; 30) %&gt;% 
+  mutate(first_pitch_strike_perc = round(strike/first_pitch_count,4)*100) %&gt;% 
+  .[,c(1,3,2,4)] # reordering columns 
+```
+
+$$
+\text{KZone Perc} = \frac{Total\; In\; Play\; OR\; Inside\; Strike\; Zone}{Total\; Pitches}
+$$
+
+- This metric shows the overall control the pitchers has over his pitches and ability to hit the specific spot. 
+
+- Code to calculate KZone Perc
+
+```{r kzone_perc}
+total_pitch_count &lt;- all_games %&gt;% 
+  group_by(Pitcher) %&gt;% 
+  count() %&gt;% 
+  rename(total_pitches = n)
+
+
+kzone_count &lt;- all_games %&gt;% 
+  filter(PlateLocSide &gt;= -0.75 &amp; PlateLocSide &lt;= 0.75 
+         &amp; PlateLocHeight &gt;= 1.65 &amp; PlateLocHeight &lt;= 3.65 | PitchCall == 'InPlay') %&gt;% 
+  group_by(Pitcher) %&gt;% 
+  count() %&gt;% 
+  rename(total_kzone = n)
+
+# combine and get percent
+all_pitcher_kzone &lt;- total_pitch_count %&gt;% 
+  left_join(kzone_count, by = c('Pitcher'='Pitcher')) %&gt;% 
+  arrange(desc(total_pitches)) %&gt;% 
+  filter(total_pitches &gt; 30) %&gt;% 
+  .[,c(1,3,2)] %&gt;% 
+  mutate(kzone_perc = round(total_kzone/total_pitches, 4)*100)
+```
+
+$$
+\text{Chase Against Perc} = \frac{Strike\; Swinging}{Total\; Out\; of\; Zone}
+$$
+
+- Chase against % is not a direct correlation to the movement of a pitch but does the deceptiveness in a pitchers pitch.
+
+- Code to calculate Chase Against Perc
+
+```{r chase_perc}
+total_out_zone &lt;- all_games %&gt;%
+  filter(InZone == FALSE) %&gt;% 
+  group_by(Pitcher) %&gt;% 
+  count() %&gt;% 
+  rename(total_out_zone = n)
+
+total_chase &lt;- all_games %&gt;% 
+  filter(InZone == FALSE &amp; PitchCall == 'StrikeSwinging') %&gt;% 
+  group_by(Pitcher) %&gt;% 
+  count() %&gt;% 
+  rename(total_chase_count = n) %&gt;% 
+  filter(total_chase_count != is.na(total_chase_count)) 
+
+all_pitcher_chase_against &lt;- total_out_zone %&gt;% 
+  left_join(total_chase, by = c('Pitcher'='Pitcher')) %&gt;% 
+  arrange(desc(total_out_zone)) %&gt;% 
+  filter(total_out_zone &gt; 30) %&gt;% 
+  .[,c(1,3,2)] %&gt;% 
+  mutate(chase_against_perc = round(total_chase_count/total_out_zone, 4)*100) %&gt;% 
+  filter(chase_against_perc != is.na(chase_against_perc))
+```
+
+Along with: 
+
+- exit velo against
+- Code to calculate Exit Velo against
+
+```{r exit_velo}
+pitcher_exit_speed_avg &lt;- all_games %&gt;% 
+  filter(PitchCall == "InPlay") %&gt;% 
+  filter(ExitSpeed != is.na(ExitSpeed)) %&gt;% 
+  group_by(Pitcher) %&gt;% 
+  summarise(avg_exit_speed =  round(mean(ExitSpeed), 2))
+
+all_pitcher_exit_velo &lt;- pitcher_exit_speed_avg %&gt;% 
+  left_join(total_inplay, by = c('Pitcher'='Pitcher')) %&gt;% 
+  arrange(desc(total_inplay)) %&gt;% 
+  filter(total_inplay &gt; 30)
+```
+
+- vertical launch angle against
+- Code to calculate vertical launch angle against
+
+```{r vert_la}
+pitcher_avg_exit_angle &lt;- all_games %&gt;% 
+  filter(PitchCall == "InPlay") %&gt;% 
+  filter(Angle != is.na(Angle)) %&gt;% 
+  group_by(Pitcher) %&gt;% 
+  summarize(avg_angle = round(mean(Angle), 2))
+
+all_pitcher_angle &lt;- pitcher_avg_exit_angle %&gt;% 
+  left_join(total_inplay, by = c('Pitcher'='Pitcher')) %&gt;% 
+  arrange(desc(total_inplay)) %&gt;% 
+  filter(total_inplay &gt; 30) 
+```
+
+Which I decide to omit a formula since these are just averages. 
+
+## Batter Metrics 
+
+- Average Vertical Launch Angle
+```{r avg_vert_la}
+all_batters_vert_avg &lt;- all_games %&gt;% 
+  filter(PitchCall == "InPlay" &amp; Angle != is.na(Angle)) %&gt;% 
+  group_by(Batter) %&gt;% 
+  summarize(avg_vert_angle = round(mean(Angle), 1))
+
+all_batters_inplay &lt;- all_games %&gt;% 
+  filter(PitchCall == "InPlay" &amp; Angle != is.na(Angle)) %&gt;% 
+  group_by(Batter) %&gt;% 
+  count() %&gt;% 
+  rename('Count' = n) %&gt;% 
+  filter(Count &gt; 30)
+
+# joining datasets
+batter_vert_angle &lt;- all_batters_inplay %&gt;% 
+  inner_join(all_batters_vert_avg, by = c('Batter'='Batter')) %&gt;% 
+  arrange(desc(Count))
+```
+- Max Exit Velo
+```{r max_exit_velo}
+max_velo &lt;- all_games %&gt;% 
+  filter(ExitSpeed != is.na(ExitSpeed)) %&gt;% 
+  group_by(Batter) %&gt;% 
+  summarize(max_ev = round(max(ExitSpeed),1))
+```
+- Percent of Batted Balls over 95 mph
+```{r bb_95_plus}
+bb_count &lt;- all_games %&gt;% 
+  filter(PitchCall == "InPlay") %&gt;% 
+  group_by(Batter) %&gt;% 
+  count() %&gt;% 
+  rename(total_inplay = n) %&gt;% 
+  filter(total_inplay &gt; 30)
+
+# Batters total &lt; 95 mph
+bb_95_plus_count &lt;- all_games %&gt;% 
+  filter(PitchCall == "InPlay" &amp; ExitSpeed &gt;= 95) %&gt;% 
+  group_by(Batter) %&gt;% 
+  count() %&gt;% 
+  rename(total_95_plus = n)
+
+# Batters percent
+all_bb_95_plus &lt;- bb_95_plus_count %&gt;% 
+  inner_join(bb_count, by = c('Batter'='Batter')) %&gt;% 
+  mutate(bb_plus95_perc = round((total_95_plus/total_inplay) * 100, 1)) %&gt;% 
+  arrange(desc(total_inplay))
+```
+- Percent of Batted Balls over 105 mph
+```{r bb_105_plus}
+bb_105_plus_count &lt;- all_games %&gt;% 
+  filter(PitchCall == "InPlay" &amp; ExitSpeed &gt;= 105) %&gt;% 
+  group_by(Batter) %&gt;% 
+  count() %&gt;% 
+  rename(total_105_plus = n)
+
+# Batters percent
+all_bb_105_plus &lt;- bb_105_plus_count %&gt;% 
+  inner_join(bb_count, by = c('Batter'='Batter')) %&gt;% 
+  mutate(bb_plus105_perc = round((total_105_plus/total_inplay) * 100, 1)) %&gt;% 
+  arrange(desc(total_inplay))
+```
+
+This might seem redundant and I was told by a League Executive who had conversations with other MLB teams that this one was not something they really cared about and percent of Batted Balls over 95 mph was more important.
+
+- Chase Average
+
+Also know as whiff rate, is understood as the number of times a batter has strike swinging regardless of it the pitch was inside or outside of the zone.
+```{r batter_chase_perc}
+total_out_of_zone &lt;- all_games %&gt;% 
+  filter(InZone == FALSE) %&gt;% 
+  group_by(Batter) %&gt;% 
+  count() %&gt;% 
+  rename(OutOfZone = n)
+
+total_out_of_zone_ss &lt;- all_games %&gt;% 
+  filter(InZone == FALSE &amp; PitchCall == "StrikeSwinging") %&gt;% 
+  group_by(Batter) %&gt;% 
+  count() %&gt;% 
+  rename(ss_OutOfZone = n)
+
+# combining datasets
+all_chase_perc &lt;- total_out_of_zone %&gt;% 
+  left_join(total_out_of_zone_ss, by = c('Batter'='Batter')) %&gt;% 
+  .[,c(1,3,2)]
+
+all_chase_perc[is.na(all_chase_perc)] &lt;- 0 
+
+all_chase_perc &lt;- all_chase_perc %&gt;% 
+  mutate(chase_perc = round((ss_OutOfZone/OutOfZone) * 100, 1))
+
+all_chase_perc &lt;- all_chase_perc %&gt;% 
+  filter(OutOfZone &gt; 30)
+```
+
+- Miss percentage 
+```{r miss_perc}
+# Denominator - total pitches Swung at
+pitches_swung &lt;- all_games %&gt;% 
+  filter(PitchCall %in% c("StrikeSwinging", "FoulBall", "InPlay")) %&gt;% 
+  group_by(Batter) %&gt;% 
+  count() %&gt;% 
+  rename(swung_at_count = n)
+
+# Numerator - total Missed
+pitches_missed &lt;- all_games %&gt;% 
+  filter(PitchCall == "StrikeSwinging") %&gt;% 
+  group_by(Batter) %&gt;% 
+  count() %&gt;% 
+  rename(missed_count = n)
+
+# Join both Datasets
+all_miss_perc &lt;- pitches_missed %&gt;% 
+  right_join(pitches_swung, by = c('Batter'='Batter')) 
+
+all_miss_perc[is.na(all_miss_perc)] &lt;- 0
+
+all_miss_perc &lt;- all_miss_perc %&gt;% 
+  mutate(miss_perc = round((missed_count / swung_at_count)*100, 1)) 
+
+all_miss_perc &lt;- all_miss_perc %&gt;% 
+  filter(swung_at_count &gt; 30) 
+```
+
+- InZone Miss percentage
+```{r inzone_miss_perc}
+# filtering to in zone dataset
+in_zone &lt;- all_games %&gt;% 
+  filter(InZone == TRUE) 
+
+# Denominator - total pitches Swung at
+iz_pitches_swung &lt;- in_zone %&gt;% 
+  filter(PitchCall %in% c("StrikeSwinging", "FoulBall", "InPlay")) %&gt;% 
+  group_by(Batter) %&gt;% 
+  count() %&gt;% 
+  rename(iz_swung_count = n)
+
+# Numerator - total swung at
+iz_pitches_missed &lt;- in_zone %&gt;% 
+  filter(PitchCall == 'StrikeSwinging') %&gt;% 
+  group_by(Batter) %&gt;% 
+  count() %&gt;% 
+  rename(iz_miss_count = n)
+
+# Join datasets together
+all_InZone_perc &lt;- iz_pitches_missed %&gt;% 
+  right_join(iz_pitches_swung, by=c('Batter'='Batter'))
+
+all_InZone_perc[is.na(all_InZone_perc)] &lt;- 0
+
+all_InZone_perc &lt;- all_InZone_perc %&gt;% 
+  mutate(InZone_miss_perc = round( (iz_miss_count / iz_swung_count) *100, 1))
+
+all_InZone_perc &lt;- all_InZone_perc %&gt;% 
+  filter(iz_swung_count &gt; 30)
+```
+
+
+## Catcher Metrics 
+
+- Pop Time
+MLB Definition - “represents the time elapsed from the moment the pitch hits the catcher’s mitt to the moment the intended fielder is projected to receive his throw at the center of the base.” (https://www.mlb.com/glossary/statcast/pop-time)
+
+```{r poptime}
+# Pop time 
+poptime_count &lt;- all_games %&gt;% 
+  filter(PopTime != is.na(PopTime)) %&gt;% 
+  group_by(Catcher) %&gt;% 
+  count() %&gt;% 
+  rename(Count = n)
+
+poptime_avg &lt;- all_games %&gt;% 
+  filter(PopTime != is.na(PopTime)) %&gt;% 
+  group_by(Catcher) %&gt;% 
+  summarize(avg_poptime = round(mean(PopTime), 1))
+
+# join datasets
+all_poptime &lt;- poptime_count %&gt;% 
+  left_join(poptime_avg, by=c('Catcher'='Catcher'))
+```
+
+- Throw Speed
+Trackman Definition - “Speed at release of throw from catcher” 
+
+```{r throw_speed}
+throwspeed_count &lt;- all_games %&gt;% 
+  filter(ThrowSpeed != is.na(ThrowSpeed)) %&gt;% 
+  group_by(Catcher) %&gt;% 
+  count() %&gt;% 
+  rename(Count = n)
+
+throwspeed_avg &lt;- all_games %&gt;% 
+  filter(ThrowSpeed != is.na(ThrowSpeed)) %&gt;% 
+  group_by(Catcher) %&gt;% 
+  summarize(avg_throwspeed = round(mean(ThrowSpeed), 1))
+
+
+# join datasets
+all_throwspeed &lt;- throwspeed_count %&gt;% 
+  left_join(throwspeed_avg, by = c('Catcher'='Catcher'))
+```
+
+The scout did talk about catcher framing and its increase in popularity, but I have not had the time to think through how I want to calculate it or research how it is calculated (which will probably just be number of pitches outside zone called for strike within a certain range) and I know you can visualize it as well, I just haven't taken the time to do so. 
+
+As I noted most of these metrics it is easy to see that by ordering the values for each player in descending order or ascending order you can then assign a rank to them. I combined most values and then ordered them to see who had the lowest score indicating that this player is the better overall pitcher in these metrics. the reason I said "most" is becuase some would have required more thought process to determine the best way to rank a player rather than descending and ascending. Those metrics for batters, Vertical Launch Angle and Batted Balls over 105 percent. For Vertical Launch Angle, if you are familiar with the SABRmetric of Barrel then you know launch angle has sweet spot. So to bin values and then give a rank based off of that is possible but I choose to leave off as I was going for something quick. For Batted Balls over 105 mph percent, as stated this one is not as important and many players did not have a hit that falls into this category. The results can be seen below:
+
+### Best Pitchers
+
+A visual depicating the top Pitchers. 
+
+![](pitcher_rankings-2.png)
+
+Here are eachs rankings for all metrics
+
+![](pitcher_metric_ranks_table.png)
+
+### Best Batters 
+
+A visual depicating the top Batters. 
+![](batting_player_rankings-2.png)
+
+Rankings for each Metrics of the top ten Batters
+![](batter_metric_ranks_table.png)
+
+### Best Catcher
+
+A visual depicating the top Catchers. 
+![](catcher_rankings-2.png) 
+
+Rankings for each Metrics of the top ten Catchers
+![](catcher_metric_ranks_table.png)
+
+# What is next?
+
+With next season starting at the end of May and as the Chair of the Data Analytics committee I have been thinking about the best things to do that will benefit the league in the future. As I have gathered the information I can I know that the following projects are what will help benefit the league this upcoming season: 
+
+- A File Transfer Protocol (FTP) script to automate the gathering all the trackman data
+- A web scrapping script to get Umpire information per game
+- A web application to evaluate Umpire performance 
+- A pitch classification model 
+
+ </code></pre>
+</div></div></div></div></div>
 </div> <!-- /content -->
 
 
