@@ -94,8 +94,6 @@ $$
 
 - A higher GB % is desired since it is expected to result in outs.
 
-- Code to calculate Ground Ball Perc
-
 ```{r gb_perc}
 total_gb <- all_games %>% 
   group_by(Pitcher) %>% 
@@ -116,8 +114,6 @@ $$
 
 - A lower FB % is desired as well
 
-- Code to calculate Fly Ball Perc
-
 ```{r fb_perc}
 total_fb <- all_games %>% 
   group_by(Pitcher) %>% 
@@ -137,8 +133,6 @@ $$
 $$
 
 - A Higher 1 pitch strike % is desired and shows the control a pitcher has. 
-
-- Code to calculate 1st Pitch Strike Perc
 
 ```{r 1st_pitch_k_perc}
 total_first_pitch <- all_games %>% 
@@ -167,8 +161,6 @@ $$
 $$
 
 - This metric shows the overall control the pitchers has over his pitches and ability to hit the specific spot. 
-
-- Code to calculate KZone Perc
 
 ```{r kzone_perc}
 total_pitch_count <- all_games %>% 
@@ -199,8 +191,6 @@ $$
 
 - Chase against % is not a direct correlation to the movement of a pitch but does the deceptiveness in a pitchers pitch.
 
-- Code to calculate Chase Against Perc
-
 ```{r chase_perc}
 total_out_zone <- all_games %>%
   filter(InZone == FALSE) %>% 
@@ -227,7 +217,6 @@ all_pitcher_chase_against <- total_out_zone %>%
 Along with: 
 
 - exit velo against
-- Code to calculate Exit Velo against
 
 ```{r exit_velo}
 pitcher_exit_speed_avg <- all_games %>% 
@@ -243,7 +232,6 @@ all_pitcher_exit_velo <- pitcher_exit_speed_avg %>%
 ```
 
 - vertical launch angle against
-- Code to calculate vertical launch angle against
 
 ```{r vert_la}
 pitcher_avg_exit_angle <- all_games %>% 
