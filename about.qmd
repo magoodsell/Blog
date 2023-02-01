@@ -4,15 +4,15 @@ image: profile.jpg
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/MatthewGoodse17
     - icon: linkedin
       text: LinkedIn
       href: linkedin.com/in/matthew-a-goodsell/
     - icon: github
       text: Github
       href: https://github.com/magoodsell
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/MatthewGoodse17
 
 ---
 
