@@ -1,0 +1,27 @@
+---
+title: "Pioneer League Baseball - Web Scraping Umpire Data"
+author: "Matthew Goodsell"
+date: "2023-01-28"
+categories: [Baseball, SABRmetrics, Analysis, webscraping]
+freeze: True
+format: 
+  html: 
+    code-fold: true
+    code-tools: true
+---
+
+what I haved learned
+- You have to have small test on big programs like this. 
+- It takes a lot of time
+- Everytime you want to change something it changes the whole program
+- You really need to evaluate all options 
+
+OUTLINE
+-intro 
+    -Reference last article 
+    -since the last article I have spent much of the time working on the webscraping script to pull Other informaiton 
+        -show picture of the information 
+
+-decided to use selenium and firefox as my choices of package and browers to use
+-What have I learned about webscraping
+    -
