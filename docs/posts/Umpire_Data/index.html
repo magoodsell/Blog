@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Matthew Goodsell">
-<meta name="dcterms.date" content="2023-01-28">
+<meta name="dcterms.date" content="2023-03-28">
 
 <title>Blog - Pioneer League Baseball - Web Scraping Umpire Data</title>
 <style>
@@ -124,6 +124,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   }
 }</script>
 
+<script src="../../site_libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<link href="../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="../../site_libs/datatables-binding-0.27/datatables.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../site_libs/dt-core-1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../../site_libs/dt-core-1.12.1/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="../../site_libs/dt-core-1.12.1/js/jquery.dataTables.min.js"></script>
+<link href="../../site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="../../site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -168,11 +178,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <div class="quarto-title-block"><div><h1 class="title">Pioneer League Baseball - Web Scraping Umpire Data</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+      <div class="quarto-title-block"><div><h1 class="title">Pioneer League Baseball - Web Scraping Umpire Data</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Baseball</div>
-                <div class="quarto-category">SABRmetrics</div>
-                <div class="quarto-category">Analysis</div>
                 <div class="quarto-category">webscraping</div>
               </div>
                   </div>
@@ -191,7 +199,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 28, 2023</p>
+        <p class="date">March 28, 2023</p>
       </div>
     </div>
     
@@ -209,13 +217,100 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<p>what I haved learned - You have to have small test on big programs like this. - It takes a lot of time - Everytime you want to change something it changes the whole program - You really need to evaluate all options</p>
-<p>OUTLINE -intro -Reference last article -since the last article I have spent much of the time working on the webscraping script to pull Other informaiton -show picture of the information</p>
-<p>-decided to use selenium and firefox as my choices of package and browers to use -What have I learned about webscraping -</p>
+<div class="cell">
+
+</div>
+<p>Before this project I had no experience web scraping. I had certainly heard about and seen it done, but never experienced it myself. Web scraping is really just a way to automatically search the web or website and grab or copy the desire data from it. My reason for doing this was simply to be able to match game data from Trackman for the Pioneer Baseball League with the associated Umpires for each game as Trackman does not capture this information. In my role, as the Committee Chair of the Data Analytics group for the Pioneer League and from other conversations with League people I was involved in, umpire evaluations was a common theme.</p>
+<p>Since my last article I have spent much of my time writing the script to grab Umpire information from the League Website. There has been a lot of trial and error so here are a few things I have learned:</p>
+<ul>
+<li>Small test are the best route to go</li>
+<li>It’s better to get something to work with rather than wait for the perfect solution</li>
+<li>One really needs to think about how all potential options</li>
+<li>One small change can have major affects on the whole program</li>
+</ul>
+<section id="my-experience" class="level1">
+<h1>My Experience</h1>
+<p>I chose to use the python package Selenium as my package. I also decided to use Firefox as my browser choice as well. I had seen both of these used before and Firefox just worked better than Chrome. This article is not intended to go into the details of how to do rather just discuss my experience.</p>
+<section id="the-flow" class="level2">
+<h2 class="anchored" data-anchor-id="the-flow">The Flow</h2>
+<p>The Data I was after was found in the box score link of an individual game. In order to get to it or rather scrape all historical data at once, I had to go first to the schedule page (https://www.pioneerleague.com/sports/bsb/2022/schedule) and click on the box score then chose to grab all the “Other Information” in the box score for a game. Subsequently, the script needs to loop through all games, click on box score grab data from “Other Information” and then go back to the schedule url.</p>
+<p>It goes as follows:</p>
+<p><img src="schedule_page.png" class="img-fluid"></p>
+<p><img src="box_score_other_information.png" class="img-fluid"></p>
+<p>Then back to the schedule page.</p>
+<p>Pretty straight forward, but it amazes me just how difficult or how much more invovled it gets.</p>
+</section>
+<section id="the-code" class="level2">
+<h2 class="anchored" data-anchor-id="the-code">The Code</h2>
+<p>As Mentioned I used Selenium and Firefox. Here is a snippet of the code that gets the script running:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> selenium <span class="im">import</span> webdriver</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>schedule_url <span class="op">=</span> <span class="vs">r'https://www.pioneerleague.com/sports/bsb/2022/schedule'</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># driver = webdriver.Firefox()</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># driver.get(schedule_url) </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>I struggled in the beginning to know how to go about scraping the web and what instructions to give to python to know what to scrape and do it dynamically. In my Google searching I came across xpath’s. I came to find out that a web pages html is very much a tree with branches and nodes. The xpath is similar to a file’s directory and can be thought of as a web pages directory to a specific branch and node.</p>
+<section id="how-to-find-the-xpath" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-find-the-xpath">How to find the xpath</h3>
+<p>I go to this by right clicking on the box score and clicking the inspect option.</p>
+<p><img src="inspect_option.png" class="img-fluid"></p>
+<p>This leads you to the html code for the website and the exact code for the box score of the page where I was able to copy the xpath.</p>
+<p><img src="box_score_xpath.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="my-solution" class="level2">
+<h2 class="anchored" data-anchor-id="my-solution">My Solution</h2>
+<p>At first I wanted to scrape the websites and put everything in csv file exactly how I wanted. This meant, in a nice tidy format where I would have a column for game date, home team, away team, then all the “Other Information” which was: Location, Stadium, Attendance, Duration, Umpires and Weather. I soon realized that not every game’s “Other Information” section had the previous mentioned sections. In other words, the data was sparse meaning I had to take this into account in my script.</p>
+<p>So I went down the road of trying to figure out the perfect solution that would allow this and other things to be taken into account. As I was struggling to get a working solution my professor suggested that I should just get the “Other Information” as one piece. So rather than put the data for the “Location”, for example, as one, rather grab and then pull its associated data together and just get that as one. This means the script will return one column with the value of “Location: Idaho Falls, ID” for it’s associated game. Then I could take this and do some data wrangling to get the data in a tidy format with Location being a column and Idaho Falls being the value in the cell and so on with all pieces of information.</p>
+<p>I realized I needed to do that and come back to the perfect solution later. It is better to get something working than to be held up waiting for the perfect solution before moving forward in the project.</p>
+<p>The script returned the resulting data object:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(DT, tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>scrape_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'../../data/game_info_test_2_columns_04.csv'</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>scrape_data <span class="ot">&lt;-</span> scrape_data <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(<span class="st">'...1'</span>, <span class="st">'away_team'</span>, <span class="st">'home_team'</span>, <span class="st">'teams'</span>)) <span class="sc">%&gt;%</span>  .[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(scrape_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-d8536662b29bba9a081e" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-d8536662b29bba9a081e">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10"],["Monday, May 23, 2022","Monday, May 23, 2022","Monday, May 23, 2022","Monday, May 23, 2022","Monday, May 23, 2022","Monday, May 23, 2022","Tuesday, May 24, 2022","Tuesday, May 24, 2022","Tuesday, May 24, 2022","Tuesday, May 24, 2022"],[1,1,1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1,1,1],["Location: Colorado Springs, CO","Stadium: UCHealth Park","Attendance: 3537","Duration: 3:22","Umpires: Home plate - Cameron Monaco , First base - Doug Hodges , Third base - Bill Berger","Weather: Rain. Temp: 49 degrees","Location: Colorado Springs, CO","Stadium: UCHealth Park","Attendance: 869","Duration: 3:05"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>game_date<\/th>\n      <th>game_day_number<\/th>\n      <th>day_game_total<\/th>\n      <th>section_info<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>I then did some wrangling to get the data in tidy format:</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>wrangled_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'../../data/Offical_game_Umpire_data_02.csv'</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>wrangled_data <span class="ot">&lt;-</span> wrangled_data <span class="sc">%&gt;%</span> .[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,]</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(wrangled_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b7a573d57f318116bff6" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b7a573d57f318116bff6">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10"],["Monday, May 23, 2022","Tuesday, May 24, 2022","Wednesday, May 25, 2022","Wednesday, May 25, 2022","Wednesday, May 25, 2022","Wednesday, May 25, 2022","Wednesday, May 25, 2022","Wednesday, May 25, 2022","Thursday, May 26, 2022","Thursday, May 26, 2022"],[1,1,1,1,2,3,4,5,1,1],[1,1,1,5,5,5,5,5,5,4],["Colorado Springs, CO","Colorado Springs, CO","Idaho Falls, ID",null,"Great Falls, MT","Ogden, Utah","Colorado Springs","Missoula","Missoula",null],["UCHealth Park","UCHealth Park","Melaleuca Field",null,"Centene Stadium","Lindquist Field","UCHealth Park","Ogren Allegiance Par","Ogren Allegiance",null],[3537,869,null,2691,1512,3127,627,2048,1462,null],["3:22","3:05",null,"3:20","3:54","3:51","2:47","3:46",null,"3:36"],["Cameron Monaco","Doug Hodges",null,"Rick Fratus","Craig Struble",null,"William Berger","Raymond Bidwell",null,"Kaleb Kador"],["Doug Hodges","Bill Berger",null,"Mike Colson","Brandon Snyder",null,"Cameron Monico","Kaleb Kador",null,"William Minter"],["Bill Berger","Cameron Monaco",null,"Tegan Smith","Andrew Thomas",null,"Doug Hodges","William Minter",null,null],["Rain. Temp: 49 degrees","Rain. 46 Degrees.",null,null,"66 Degrees, Party Sunny, West",null,"65","Partly Cloudy 65 degrees",null,"High clouds 79 degrees"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>game_date<\/th>\n      <th>game_day_number<\/th>\n      <th>day_game_total<\/th>\n      <th>Location<\/th>\n      <th>Stadium<\/th>\n      <th>Attendance<\/th>\n      <th>Duration<\/th>\n      <th>Home Plate Ump<\/th>\n      <th>First Base Ump<\/th>\n      <th>Third Base Ump<\/th>\n      <th>Weather<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p>Once I got to this point I knew all I had to do was join the data together and I would be able to start working on Umpire Evaluations. But I failed to, and should have caught this, that just joining on date would not do it as there are more than one game in a day making it not unique. Talking to my professor, we decided the column, gameID (20220525-MelaleucaField-1), from Trackman will do it. I got going down that road and realized that this way would not take into account double headers or simply an operator error where the game gets submitted multiple times. While it is the same game it has an id of 1 then 2 or 3. What I decided to was to join on date and stadium instead.</p>
+<p>As you may be able to see, there is still some issues with the data that need to be worked out in the script</p>
+<p>This still needs to be worked on and gameID is probably the best option to move forward with. The question or obstacle will be identifying double headers and taking that into account so gameID’s can match properly.</p>
 
 
 <!-- -->
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -402,33 +497,122 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Pioneer League Baseball - Web Scraping Umpire Data"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Matthew Goodsell"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2023-01-28"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Baseball, SABRmetrics, Analysis, webscraping]</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">freeze:</span><span class="co"> True</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  html: </span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>what I haved learned</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>You have to have small test on big programs like this. </span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>It takes a lot of time</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Everytime you want to change something it changes the whole program</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>You really need to evaluate all options </span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>OUTLINE</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>-intro </span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    -Reference last article </span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    -since the last article I have spent much of the time working on the webscraping script to pull Other informaiton </span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        -show picture of the information </span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>-decided to use selenium and firefox as my choices of package and browers to use</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>-What have I learned about webscraping</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    -</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Pioneer League Baseball - Web Scraping Umpire Data"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Matthew Goodsell"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2023-03-28"</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Baseball, webscraping]</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="an">freeze:</span><span class="co"> True</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">  html: </span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup, echo=FALSE}</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">message =</span> <span class="cn">FALSE</span>, <span class="at">warning=</span><span class="cn">FALSE</span>)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>Before this project I had no experience web scraping. I had certainly heard about and seen it done, but never experienced it myself. Web scraping is really just a way to automatically search the web or website and grab or copy the desire data from it. My reason for doing this was simply to be able to match game data from Trackman for the Pioneer Baseball League with the associated Umpires for each game as Trackman does not capture this information. In my role, as the Committee Chair of the Data Analytics group for the Pioneer League and from other conversations with League people I was involved in, umpire evaluations was a common theme. </span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>Since my last article I have spent much of my time writing the script to grab Umpire information from the League Website. There has been a lot of trial and error so here are a few things I have learned: </span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Small test are the best route to go </span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>It's better to get something to work with rather than wait for the perfect solution </span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>One really needs to think about how all potential options</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>One small change can have major affects on the whole program</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="fu"># My Experience </span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>I chose to use the python package Selenium as my package. I also decided to use Firefox as my browser choice as well. I had seen both of these used before and Firefox just worked better than Chrome. This article is not intended to go into the details of how to do rather just discuss my experience. </span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Flow </span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>The Data I was after was found in the box score link of an individual game. In order to get to it or rather scrape all historical data at once, I had to go first to the schedule page (https://www.pioneerleague.com/sports/bsb/2022/schedule) and click on the box score then chose to grab all the "Other Information" in the box score for a game. Subsequently, the script needs to loop through all games, click on box score grab data from "Other Information" and then go back to the schedule url. </span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>It goes as follows: </span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="al">![](schedule_page.png)</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a><span class="al">![](box_score_other_information.png)</span></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>Then back to the schedule page. </span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>Pretty straight forward, but it amazes me just how difficult or how much more invovled it gets. </span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Code</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>As Mentioned I used Selenium and Firefox. Here is a snippet of the code that gets the script running: </span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> selenium <span class="im">import</span> webdriver</span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>schedule_url <span class="op">=</span> <span class="vs">r'https://www.pioneerleague.com/sports/bsb/2022/schedule'</span></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a><span class="co"># driver = webdriver.Firefox()</span></span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a><span class="co"># driver.get(schedule_url) </span></span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>I struggled in the beginning to know how to go about scraping the web and what instructions to give to python to know what to scrape and do it dynamically. In my Google searching I came across xpath's. I came to find out that a web pages html is very much a tree with branches and nodes. The xpath is similar to a file's directory and can be thought of as a web pages directory to a specific branch and node. </span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a><span class="fu">### How to find the xpath</span></span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>I go to this by right clicking on the box score and clicking the inspect option. </span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a><span class="al">![](inspect_option.png)</span></span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>This leads you to the html code for the website and the exact code for the box score of the page where I was able to copy the xpath. </span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a><span class="al">![](box_score_xpath.png)</span></span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a><span class="fu">## My Solution </span></span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a>At first I wanted to scrape the websites and put everything in csv file exactly how I wanted. This meant, in a nice tidy format where I would have a column for game date, home team, away team, then all the "Other Information" which was: Location, Stadium, Attendance, Duration, Umpires and Weather. I soon realized that not every game's "Other Information" section had the previous mentioned sections. In other words, the data was sparse meaning I had to take this into account in my script. </span>
+<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a>So I went down the road of trying to figure out the perfect solution that would allow this and other things to be taken into account. As I was struggling to get a working solution my professor suggested that I should just get the "Other Information" as one piece. So rather than put the data for the "Location", for example, as one, rather grab and then pull its associated data together and just get that as one. This means the script will return one column with the value of "Location: Idaho Falls, ID" for it's associated game. Then I could take this and do some data wrangling to get the data in a tidy format with Location being a column and Idaho Falls being the value in the cell and so on with all pieces of information.</span>
+<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a>I realized I needed to do that and come back to the perfect solution later. It is better to get something working than to be held up waiting for the perfect solution before moving forward in the project.</span>
+<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a>The script returned the resulting data object: </span>
+<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(DT, tidyverse)</span>
+<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>scrape_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'../../data/game_info_test_2_columns_04.csv'</span>)</span>
+<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>scrape_data <span class="ot">&lt;-</span> scrape_data <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(<span class="st">'...1'</span>, <span class="st">'away_team'</span>, <span class="st">'home_team'</span>, <span class="st">'teams'</span>)) <span class="sc">%&gt;%</span>  .[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,]</span>
+<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(scrape_data)</span>
+<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a>I then did some wrangling to get the data in tidy format: </span>
+<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>wrangled_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'../../data/Offical_game_Umpire_data_02.csv'</span>)</span>
+<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>wrangled_data <span class="ot">&lt;-</span> wrangled_data <span class="sc">%&gt;%</span> .[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,]</span>
+<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(wrangled_data)</span>
+<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>Once I got to this point I knew all I had to do was join the data together and I would be able to start working on Umpire Evaluations. But I failed to, and should have caught this, that just joining on date would not do it as there are more than one game in a day making it not unique. Talking to my professor, we decided the column, gameID (20220525-MelaleucaField-1), from Trackman will do it. I got going down that road and realized that this way would not take into account double headers or simply an operator error where the game gets submitted multiple times. While it is the same game it has an id of 1 then 2 or 3. What I decided to was to join on date and stadium instead. </span>
+<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a>As you may be able to see, there is still some issues with the data that need to be worked out in the script</span>
+<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a>This still needs to be worked on and gameID is probably the best option to move forward with. The question or obstacle will be identifying double headers and taking that into account so gameID's can match properly. </span>
+<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a></span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
