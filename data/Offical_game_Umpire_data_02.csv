@@ -1,0 +1,501 @@
+game_date,game_day_number,day_game_total,Location,Stadium,Attendance,Duration,Home Plate Ump,First Base Ump,Third Base Ump,Weather
+"Monday, May 23, 2022",1,1,"Colorado Springs, CO",UCHealth Park,3537,3:22, Cameron Monaco , Doug Hodges , Bill Berger,Rain. Temp: 49 degrees
+"Tuesday, May 24, 2022",1,1,"Colorado Springs, CO",UCHealth Park,869,3:05, Doug Hodges , Bill Berger , Cameron Monaco,Rain. 46 Degrees.
+"Wednesday, May 25, 2022",1,1,"Idaho Falls, ID",Melaleuca Field,NA,NA,NA,NA,NA,NA
+"Wednesday, May 25, 2022",1,5,NA,NA,2691,3:20, Rick Fratus , Mike Colson , Tegan Smith,
+"Wednesday, May 25, 2022",2,5,"Great Falls, MT",Centene Stadium,1512,3:54, Craig Struble , Brandon Snyder , Andrew Thomas,"66 Degrees, Party Sunny, West"
+"Wednesday, May 25, 2022",3,5,"Ogden, Utah",Lindquist Field,3127,3:51,NA,NA,NA,NA
+"Wednesday, May 25, 2022",4,5,Colorado Springs,UCHealth Park,627,2:47, William Berger , Cameron Monico , Doug Hodges,65
+"Wednesday, May 25, 2022",5,5,Missoula,Ogren Allegiance Par,2048,3:46, Raymond Bidwell , Kaleb Kador , William Minter,Partly Cloudy 65 degrees
+"Thursday, May 26, 2022",1,5,Missoula,Ogren Allegiance,1462,NA,NA,NA,NA,NA
+"Thursday, May 26, 2022",1,4,NA,NA,NA,3:36, Kaleb Kador , William Minter,NA,High clouds 79 degrees
+"Thursday, May 26, 2022",2,4,"Idaho Falls, ID",Melaleuca Field,779,3:40, Mike Colson , Tegan Smith , Rick Fratus,Cloudy
+"Thursday, May 26, 2022",3,4,"Great Falls, Mt",Centene Stadium,1255,2:42, Andrew Thomas , Brandon Snyder , Cory Reeves,"72 Degrees, Overcast, 8 mph E"
+"Thursday, May 26, 2022",4,4,"Ogden, Utah",Lindquist Field,3940,3:33,NA,NA,NA,NA
+"Friday, May 27, 2022",1,4,"Idaho Falls, ID",Melaleuca Field,1354,2:48, Tegan Smith , Rick Fratus , Mike Colson,Cloudt
+"Friday, May 27, 2022",2,4,"Great Falls, MT",Centene Stadium,1896,3:31,NA,NA,NA,"70 degrees, Partly Sunny, East"
+"Friday, May 27, 2022",3,4,Missoula,Allegiance Ogren,1833,3:16, Kaleb Kador , William Minter , Raymond Bidwell,Partly Cloudy 68 degrees
+"Friday, May 27, 2022",4,4,"Ogden, Utah",Lindquist Field,3687,4h 2m, Ryan Hansen , Kevin Macho , Sterling Davie,NA
+"Saturday, May 28, 2022",1,4,"Great Falls, Mt",Centene Stadium,1116,2:52, Andy Anderson , Brandon Snyder , Andrew Thomas,NA
+"Saturday, May 28, 2022",1,5,NA,NA,NA,NA,NA,NA,NA,"60 Degrees, Cloudy, 6 mph W"
+"Saturday, May 28, 2022",2,5,Colorado Springs,UCHealth Park,4026,3:22, Kenny Adducci , Doug Hodges , William Berger,80 degrees
+"Saturday, May 28, 2022",3,5,"Ogden, Utah",NA,2575,2:56, Ryan Hansen , Anthony Preston , Joe Sisson,NA
+"Saturday, May 28, 2022",4,5,"Boise, ID",Memorial Stadium,4112,2:34,NA,NA,NA,Partly Cloudy
+"Saturday, May 28, 2022",5,5,"Billings, MT",NA,1734,3:13, Rob Minter , Jordan Smart , Merrell Watkins,"Overcast skies, rain, 65 degrees"
+"Sunday, May 29, 2022",1,5,"Great Falls, Mt",Centene Stadium,1178,3:40, Brandon Snyder , Andrew Thomas , Andy Anderson,"58 Degrees, Overcast, 13 mph N"
+"Sunday, May 29, 2022",2,3,"Colorado Springs, CO",UCHealth Park,2818,3:42, Doug Hodges , Bill Berger , Kenny Adducci,Partly Cloudy. Temperature: 74 Degrees.
+"Sunday, May 29, 2022",3,3,"Billings, MT",Dehler Park,1521,3:14, Jordan Smart , Merrell Watkins , Rob Minter,"Partly cloudy, 64 degrees"
+"Monday, May 30, 2022",1,3,"Boise, ID",Memorial Stadium,2403,3:27, Zane Clutts , Rick Fratus , Joshua Garcia,"Light Rain, 50 Degrees"
+"Monday, May 30, 2022",2,3,"Great Falls, Mt",Centene Stadium,952,3:12, Andrew Thomas , Josh Garner , Brandon Snyder,"50 Degrees, Cloudy, 23 mph N"
+"Monday, May 30, 2022",3,3,"Colorado Springs, CO",UCHealth Park,1198,3:36, Bill Berger , Kenny Adducci , Doug Hodges,Sunny. 65 Degrees.
+"Tuesday, May 31, 2022",1,3,Missoula,NA,784,2:56, R. Bidwell,NA,NA,"High Clouds, 64F"
+"Tuesday, May 31, 2022",2,3,"Boise, ID",Memorial Stadium,2804,3:44, Rick Fratus , Ryan Hansen , Greg Xepoleas,NA
+"Tuesday, May 31, 2022",3,3,"Idaho Falls, ID",Melaleuca Field,934,3:04, Mike Colson , Tegan Smith , Rick Daley,"Sunny, Cold"
+"Wednesday, June 01, 2022",1,3,Missoula MT,Ogren Park,924,3:59, J. Smart , W. Minter , R. Bidwell,"Mostly Cloudy, 68 F"
+"Wednesday, June 01, 2022",2,3,"Boise, ID",Memorial Stadium,2744,NA,NA,NA,NA,NA
+"Wednesday, June 01, 2022",2,5,NA,NA,NA,3:12, Ryan Hansen , Greg Xepoleas , Rick Fratus,NA
+"Wednesday, June 01, 2022",3,5,UNC,NA,200,3:00,NA,NA,NA,
+"Wednesday, June 01, 2022",4,5,"Billings, Mont.",Dehler Park,1487,2:55, Larry Schmitt , Brandon Snyder , Andrew Thomas,"65, mostly cloudy"
+"Wednesday, June 01, 2022",5,5,"Idaho Falls, ID",Melaleuca Field,956,4:17, Tegan Smith , Rick Dales , Shane Proctor,Clear Skies
+"Thursday, June 02, 2022",1,5,Missoula,Ogren Park,1074,2:57,NA, R. Bidwell,NA,"mostly clear, 72F"
+"Thursday, June 02, 2022",2,5,"Boise, ID",Memorial Stadium,2817,3:15, Greg Xepoleas , Rick Fratus , Ryan Hansen,NA
+"Thursday, June 02, 2022",3,5,UNC,NA,80,3:03,NA,NA,NA,
+"Thursday, June 02, 2022",4,5,"Billings, MT",Dehler Park,1471,2:33, Brandon Snyder , Andrew Turner , Larry Schmitt,"Clear skies, 72 degrees"
+"Thursday, June 02, 2022",5,5,"Idaho Falls, ID",Melaleuca Field,2833,3;27, Rick Daley , Shane Proctor , Trevor Walker,Fair
+"Friday, June 03, 2022",1,5,"Boise, ID",Memorial Stadium,3547,3:29, Rick Fratus , Dion Dice , Ryan Hansen,"Mostly Cloudy, 85 Degrees"
+"Friday, June 03, 2022",2,5,Missoula,Ogren Park,2041,4:00, R. Bidwell,NA,NA,NA
+"Friday, June 03, 2022",2,4,NA,NA,NA,NA,NA,NA,NA,"Rain Delayed, Cloudy, 63F"
+"Friday, June 03, 2022",3,4,Jackson Field,NA,105,2:48,NA,NA,NA,
+"Friday, June 03, 2022",4,4,"Idaho Falls, ID",Melaleuca Field,2977,3:21, Blair Pipo , Michael Deboer , Sam Esterholt,Clear
+"Saturday, June 04, 2022",1,4,"Boise, ID",NA,3528,3:14, Greg Xepoleas , Rick Fratus , Dion Dice,"Mostly Cloudy, 70 Degrees"
+"Saturday, June 04, 2022",2,4,"Missoula, MT",Ogren Park,2171,3:03,NA,NA,NA,"Cloudy, 60F"
+"Saturday, June 04, 2022",3,4,Jackson Field,NA,108,NA,NA,NA,NA,NA
+"Saturday, June 04, 2022",3,6,NA,NA,NA,2:50,NA,NA,NA,
+"Saturday, June 04, 2022",4,6,"Billings, Mont.",Dehler Park,1924,2:22,NA,NA,NA,Overcast 70
+"Saturday, June 04, 2022",5,6,"Billings, Mont.",Dehler Park,1478,3:11,NA,NA,NA,Overcast 65
+"Saturday, June 04, 2022",6,6,"Idaho Falls, ID",Melaleuca Field,2206,3:37, Scott Esterholt , Mike Deboer , Blair Pippo,Overcast
+"Sunday, June 05, 2022",1,6,"Missoula, MT",Ogren Park,967,3:07,NA,NA,NA,
+"Sunday, June 05, 2022",2,6,Jackson Field,NA,110,3:22,NA,NA,NA,
+"Sunday, June 05, 2022",3,6,"Billings, MT",Dehler Park,1692,2:54,NA,NA,NA,NA
+"Sunday, June 05, 2022",3,5,NA,NA,NA,NA, Brandon Snyder , Andrew Thomas , Stu Bertrand,"Partly Cloudy, 70"
+"Sunday, June 05, 2022",4,5,"Idaho Falls, ID",Melaleuca Field,780,4:02, Michael Deboer , Rick Daley , Blair Pippo,Sunny
+"Sunday, June 05, 2022",5,5,"Boise, ID",Memorial Stadium,2644,4:21, Grex Xepoleas , Dion Dice , Rick Fratus,"Overcast and Raining, 67 Degre"
+"Tuesday, June 07, 2022",1,5,Grand Junction,NA,1473,3:26,NA,NA,NA,
+"Tuesday, June 07, 2022",2,5,"Ogden, Utah",Lingquist Field,3970,2HR 53M, Cody Curnutt , Anthony Preston , Todd Skeen,
+"Tuesday, June 07, 2022",3,5,UCHealth Park,NA,1207,4:05, William Berger , Cody Allenbrand , Tim Hatfield,NA
+"Tuesday, June 07, 2022",3,4,NA,NA,NA,NA,NA,NA,NA,63
+"Tuesday, June 07, 2022",4,4,"Great Falls, Mt",Centene Stadium,912,3:22, Shad Chrisman , Andrew Thomas , Brandon Snyder,"59 Degrees, Cloudy, 23 mph NNW"
+"Wednesday, June 08, 2022",1,4,"Ogden, Utah",Lindquist Field,4604,3HR 21M, Anthony Preston , Michael DeBoer , Cody Curnutt,
+"Wednesday, June 08, 2022",2,4,Missoula,Ogren Allegiance,1729,3:46, Nick Jahnke , Rick Fratus , Ratmond Bidwell,Overcast 66 degrees
+"Wednesday, June 08, 2022",3,4,Colorado Springs,UCHealth Park,801,NA,NA,NA,NA,NA
+"Wednesday, June 08, 2022",3,5,NA,NA,NA,3:26, Cody Allenbrand , Tim Hatfield , William Berger,70
+"Wednesday, June 08, 2022",4,5,Grand Junction,NA,1120,3:19,NA,NA,NA,
+"Wednesday, June 08, 2022",5,5,"Great Falls, MT",Centene Stadium,1025,2:55,NA,NA,NA,"69 degrees, mostly sunny, Nort"
+"Thursday, June 09, 2022",1,5,"Missoula, MT",Ogren Allegiance,1409,3:00, Rick Fratus , Nick Jahnke , Jefferson Ball,Partly Cloudy 79 degrees
+"Thursday, June 09, 2022",2,5,Colorado Springs,UCHealth Park,778,4:10, Tim Hatfield , Gary Czachowski , Bill Berger,80
+"Thursday, June 09, 2022",3,5,Grand Junction,NA,1041,3:31,NA,NA,NA,
+"Thursday, June 09, 2022",4,5,"Great Falls, MT",Centene Stadium,1237,3:15,NA,NA,NA,"77 degrees, sunny"
+"Thursday, June 09, 2022",5,5,"Ogden, Utah",Lindquist Field,5065,3HR 45M, Michael DeBoer , Cody Cornutt , Anthony Preston,
+"Friday, June 10, 2022",1,5,"Grand Junction, CO",Suplizio Field,1640,3:37, Lou Brown , Jordan Smart , Kelly Attchison,100 degrees
+"Friday, June 10, 2022",2,5,"Ogden, Utah",Lidnquist Field,4538,3HR 18M, Cody Curnutt , Anthony Preston , Lars Birkeland,NA
+"Friday, June 10, 2022",3,5,"Missoula, MT",Ogren Allegiance,1660,3:38, Todd Brester , Nick Jahnke , Rick Fratus,Cloudy 63 degrees
+"Friday, June 10, 2022",4,5,Colorado Springs,UCHealth Park,5153,2:53, Doug Hodges , Cameron Monaco , Bill Berger,Mostly Sunny. 85 Degrees.
+"Friday, June 10, 2022",5,5,"Great Falls, MT",Centene Stadium,1217,3:28,NA,NA,NA,"72 degrees, cloudy, Northeast"
+"Saturday, June 11, 2022",1,5,"Ogden, Utah",Lindquist Field,4881,3h 36m, Kelly Atkinson , Lars Birkeland , Cody Curnutt,93 Clear Sky
+"Saturday, June 11, 2022",2,5,"Colorado Springs, CO",UCHealth Park,2297,4:30, Cameron Monaco , Tim Hatfield , Bill Berger,Mostly Sunny. 87 Degrees.
+"Saturday, June 11, 2022",3,5,"Great Falls, MT",Centene Stadium,1393,3:02,NA,NA,NA,"67 degrees, partly cloudy, Nor"
+"Saturday, June 11, 2022",4,5,"Grand Junction, CO",NA,NA,NA,NA,NA,NA,NA
+"Saturday, June 11, 2022",4,4,NA,Suplizio Field,1275,3:40, Jordan Smart , William Minter , Ted Weber,101 degrees
+"Sunday, June 12, 2022",1,4,"Ogden, Utah",Lindquist Field,2087,3HR 38M, Lars Birkeland , Cody Curnutt , Kelly Atkiinson,"91 Clear Sky, 10 mph wind out"
+"Sunday, June 12, 2022",2,4,"Colorado Springs, CO",UCHealth Park,2149,3:26, Daniel Muth , Bill Berger , Tim Hatfield,Mostly Sunny. 86 Degrees.
+"Sunday, June 12, 2022",3,4,"Grand Junction, CO",Suplizio Field,1300,4:12, William Minter , Ted Weber , Jordan Smart,97 degrees
+"Sunday, June 12, 2022",4,4,"Great Falls, MT",Centene Stadium,1153,4:01,NA,NA,NA,"68 degrees, mostly cloudy, North"
+"Monday, June 13, 2022",1,4,"Billings, MT",Dehler Park,0,2:06, Rick Fratus , Merrill Watkins , Stu Bertrand,"Overcast skies, 63 degrees"
+"Monday, June 13, 2022",2,4,"Billings, MT",Dehler Park,1823,2:29, Merrill Watkins , Stu Bertrand , Rick Fratus,"Overcast skies, 60 degrees"
+"Tuesday, June 14, 2022",1,4,"Boise, ID",NA,4257,3:23, Dave Fry , Brandon Snyder , Andrew Thomas,"Clear Skies, 60 Degrees"
+"Tuesday, June 14, 2022",2,4,"Missoula, MT",Ogren Allegiance,1264,NA,NA,NA,NA,NA
+"Tuesday, June 14, 2022",2,2,NA,NA,NA,3:52, Raymond Bidwell , William Minter , Jordan Smart,Overcast 52 degrees
+"Tuesday, June 14, 2022",3,2,"Greeley, CO",Jackson Field,69,2:46, Doug Hodges , Ryan Roark , Bill Berger,
+"Tuesday, June 14, 2022",4,2,"Idaho Falls, ID",Melaleuca Field,1575,3:32,NA,NA,NA,NA
+"Tuesday, June 14, 2022",4,5,NA,NA,NA,NA, Tegan Smith , Shane Proctor , Rick Fratus,Windy
+"Tuesday, June 14, 2022",5,5,Flathead Field,NA,2203,2:33,NA,NA,NA,
+"Wednesday, June 15, 2022",1,5,"Boise, ID",Memorial Stadium,3503,3:35, Brandon Snyder , Andrew Thomas , Dave Fry,"Clear Skies, 77 Degrees"
+"Wednesday, June 15, 2022",2,5,"Missoula, MT",Ogren Allegiance,1468,3:00, William Minter , Raymond Bidwell , Jordan Smart,Clear 72 degrees
+"Wednesday, June 15, 2022",3,5,"Greeley, CO",Jackson Field,35,3:43, Ryan Roark , Bill Berger , Doug Hodges,
+"Wednesday, June 15, 2022",4,5,"Idaho Falls, ID",Melaleuca Field,2569,3:30, Shane Proctor , Rick Fratus , Tegan Smith,Fair
+"Wednesday, June 15, 2022",5,5,Flathead Field,NA,1287,3:30,NA,NA,NA,
+"Thursday, June 16, 2022",1,5,"Boise, ID",Memorial Stadium,3227,3:03, Andrew Thomas , Bob Lane , Brandon Snyder,"Partly Cloudy, 83 Degrees"
+"Thursday, June 16, 2022",2,5,Jackson Field,NA,58,3:00, Bill Berger , Doug Hodges , Ryan Roark,
+"Thursday, June 16, 2022",3,5,Flathead Field,NA,1407,3:00, Patrick Rivera , Craig Struble , Willie Stacie,"80 degrees, partly sunny"
+"Thursday, June 16, 2022",4,5,"Idaho Falls, ID",Melaleuca Field,1523,3;15, Rick Fratus , Tegan Smith , Shane Proctor,Fair
+"Thursday, June 16, 2022",5,5,Missoula,Ogren Park,2073,3:02, J. Smart , R. Bidwell , W. Minter,"78 F, overcast"
+"Friday, June 17, 2022",1,5,"Boise, ID",Memorial Staduim,4044,2:50, Nathan Elkins , Brandon Snyder , Andrew Thomas,"Overcast, 75 Degrees"
+"Friday, June 17, 2022",2,5,"Great Falls, Mt",Centene Stadium,1604,3:32, Jordan Smart , Rob Minter,NA,"92 Degrees, Sunny, 10 mph E"
+"Friday, June 17, 2022",3,5,"Ogden, Utah",Lindquist Field,3673,3H 50M, Brandon Riley , Joe Sisson , Michael DeBoer,NA
+"Friday, June 17, 2022",4,5,"Greeley, CO",Jackson Field,45,3:00, Doug Hodges , Cameron Monocco , Kenny Adducci,
+"Friday, June 17, 2022",5,5,Flathead Field,NA,1779,2:29, Robert Jaymack , Rick Fratus , Patrick Rivera,"73 degrees, cloudy"
+"Saturday, June 18, 2022",1,5,"Boise, ID",Memorial Stadium,4472,2:52, Brandon Snyder , Andrew Thomas , Nathan Elkins,"Clear Skies, 71 Degrees"
+"Saturday, June 18, 2022",2,5,"Greeley, CO",Jackson Field,77,2:33, Cameron Monaco , Kenny Adducci , Doug Hodges,
+"Saturday, June 18, 2022",3,5,"Great Falls, MT",Centene Stadium,1412,3:58,NA,NA,NA,"68 degrees, partly cloudy, Nor"
+"Saturday, June 18, 2022",4,5,"Ogden, Utah",Lindquist Field,3330,3H 7M, Todd Skeen , Michael DeBoer , Brandon Riley,windy and dust storm
+"Saturday, June 18, 2022",5,5,Flathead Field,NA,1470,3:24, Patrick Rivera , Robert Jaymack , Rick Fratus,"70 degrees, partly sunny"
+"Sunday, June 19, 2022",1,5,"Boise, ID",Memorial Stadium,4491,3:07, Andrew THomas , Bob Lane , Brandon Snyder,"Partly Cloudy, 65 Degrees"
+"Sunday, June 19, 2022",2,5,"Greeley, CO",Jackson Field,158,3:04, Tim Hatfield , Kenny Adducci , Dennis Smyth,
+"Sunday, June 19, 2022",3,5,"Great Falls, Mt",Centene Stadium,1121,3:24, Jordan Smart , Shad Chrisman , Rob Minter,"63 Degrees, Cloudy, 7 mph NE"
+"Sunday, June 19, 2022",4,5,"Ogden, Utah",Lindquist Field,3530,3H 44M, Michael DeBoer , Brandon Riley , Todd Skeen,
+"Sunday, June 19, 2022",5,5,Flathead Field,NA,1870,2:35, Robert Jaymack , Rick Fratus , Patrick Rivera,"64, partly cloud"
+"Tuesday, June 21, 2022",1,5,"Greeley, CO",Jackson Field,26,2:58, Rob Minter , Jordan Smart,NA,
+"Tuesday, June 21, 2022",2,5,"Billings, Mont.",Dehler Park,2294,3:47, Craig Berube , Larry Schmitt , Stu Bertrand,"73, Partly Cloudy"
+"Tuesday, June 21, 2022",3,5,Flathead Field,NA,1387,2:17,NA,NA,NA,
+"Tuesday, June 21, 2022",4,5,"Grand Junction, CO",Suplizio Field,1199,3:16, Andrew Torfin , Ted Weber , Andrew Burris,NA
+"Tuesday, June 21, 2022",5,5,"Idaho Falls, ID",Melaleuca Field,1501,3:27, Shane Proctor , Brandon Snyder , Kelly Atkinson,Fair
+"Wednesday, June 22, 2022",1,5,"Greeley, Colo.",Jackson Field,24,2:47, Jordan Smart , Rob Minter,NA,
+"Wednesday, June 22, 2022",2,5,"Billings, Mont.",Dehler Park,2309,2:43, Larry Schmitt , Stu Bertrand , Cameron Bjornstad,88 and Sunny
+"Wednesday, June 22, 2022",3,5,Flathead Field,NA,1502,3:49,NA,NA,NA,
+"Wednesday, June 22, 2022",4,5,"Grand Junction, CO",Suplizio Field,1466,2:59, Ted Weber , Andrew Burris , Marty Rover,NA
+"Wednesday, June 22, 2022",5,5,"Idaho Falls, ID",Melaleuca Field,2985,3:49, Brandon Snyder , Kelly Atkinson , Shane Proctor,Fair
+"Thursday, June 23, 2022",1,5,"Billings, MT",Dehler Park,2113,3:00, Cameron Bjornstad , Merrell Watkins , Jeff Branson,"Clear skies, 88 degrees"
+"Thursday, June 23, 2022",2,5,Flathead Field,NA,1664,2:55,NA,NA,NA,
+"Thursday, June 23, 2022",3,5,"Grand Junction, CO",Suplizio Field,0,3:57, Andrew Burris , Marty Rover , Ted Weber,NA
+"Thursday, June 23, 2022",4,5,"Grand Junction, CO",Suplizio Field,1319,2:11, Marty Rover , Ted Weber , Andrew Burris,NA
+"Thursday, June 23, 2022",5,5,"Idaho Falls, ID",Melaleuca Field,2009,3:45, Kelly Atkinson , Shane Proctor , Brandon Snyder,Fair
+"Friday, June 24, 2022",1,5,UC Health Park,NA,2170,2:56, Cameron Monaco , Darryl Dale, Joshua Garcia,75
+"Friday, June 24, 2022",2,5,"Idaho Falls, ID",Melaleuca Field,4103,2:46, Blair Pippo , Robert Jamack , Rick Fratus,"Fair, Windy"
+"Friday, June 24, 2022",3,5,"Grand Junction, CO",Suplizio Field,1678,3:06, Ted Weber , William Minter , Jordan Smart,
+"Friday, June 24, 2022",4,5,"Missoula, MT",Ogren Allegiance,2169,2:41, Todd Brusters , Kelly Atkinson , Brendon Snyder,Partly Cloudy 66 degrees
+"Saturday, June 25, 2022",1,5,"Billings, MT",Dehler Park,0,2:36, Merrill Watkins , Jeff Branson , Cameron Bjornstad,"Partly Cloudy, 65"
+"Saturday, June 25, 2022",2,5,"Idaho Falls, ID",NA,NA,NA,NA,NA,NA,NA
+"Saturday, June 25, 2022",2,4,NA,Melaleuca Field,3575,3:00, Robert Jamack , Rick Fratus , Blair Pippo,"Fair, Windy"
+"Saturday, June 25, 2022",3,4,"Grand Junction, CO",Suplizio Field,0,2:20, William Minter , Jordan Smart , Andrew Torfin,93 Mostly Sunny
+"Saturday, June 25, 2022",4,4,"Grand Junction, CO",Suplizio Field,2575,2:23, Jordan Smart , Andrew Torfin , William Minter,91 Sunny
+"Saturday, June 25, 2022",5,4,"Billings, MT",Dehler Park,3246,2:42, Jeff Branson , Cameron Bjornstad , Merrill Watkins,"Sunny, 70"
+"Saturday, June 25, 2022",6,4,"Missoula, MT",NA,NA,NA,NA,NA,NA,NA
+"Saturday, June 25, 2022",6,6,NA,Ogren Allegiance,2616,3:03, Kelly Atkinson , Todd Brusters , Micheal Kiger,Clear 76 degrees
+"Sunday, June 26, 2022",1,6,"Billings, MT",Dehler Park,2103,2:45, Cameron Bjornstad , Merrell Watkins , Stu Bertrand,"Clear skies, 84 degrees"
+"Sunday, June 26, 2022",2,6,"Idaho Falls, ID",Melaleuca Field,1402,3:13, Rick Fratus , Blair Pippo , Tegan Smith,Fair
+"Sunday, June 26, 2022",3,6,"Grand Junction, CO",Suplizio Field,1448,3:30, Andrew Torfin , William Minter , Jordan Smart,85 Mostly Cloudy
+"Sunday, June 26, 2022",4,6,"Missoula, MT",Ogren Park,1774,3:29,NA,NA,NA,"Sunny, 78 F"
+"Sunday, June 26, 2022",5,6,UC Health Park,NA,820,2:22, Josh Garcia , Doug Hodges , Darryl Dale,52
+"Sunday, June 26, 2022",6,6,UC Health Park,NA,820,2:07, Doug Hodges , Darryl Dale, Josh Garcia,56
+"Monday, June 27, 2022",1,6,"Billings, MT",Dehler Park,2479,3:10, Stu Bertrand , Larry Schmitt , Jeff Branson,"Clear skies, 89 degrees"
+"Wednesday, June 29, 2022",1,6,Linquest field,NA,4125,3:05, Ryan Hansen , William minter , Jordan smart,NA
+"Wednesday, June 29, 2022",2,6,"Grand Junction,CO",Suplizio Field,1278,2:52, Caden Gaurmer , Marty Rover , Lou Brown,95 Partly Cloudy
+"Wednesday, June 29, 2022",3,6,UC Health Park,NA,1667,2:56, Gary Czachowski , Arturo Belmonte , Jaden Geydry,88
+"Wednesday, June 29, 2022",4,6,"Great Falls, Mt",Centene Stadium,1121,2:52, Josh Garner , Kelly Atkinson , Brandon Snyder,"75 Degrees, Partly Sunny, 21 m"
+"Wednesday, June 29, 2022",5,6,"Missoula, MT",Ogren Allegiance,1575,3:06, Nick Jahnke , Micheal Chuckerman , Tony Prater,NA
+"Wednesday, June 29, 2022",5,1,NA,NA,NA,NA,NA,NA,NA,Partly Cloudy 71 degrees
+"Thursday, June 30, 2022",1,1,linquest,NA,4801,NA, Brandon Riley , Lyle Mangum , Tyler Wall,
+"Thursday, June 30, 2022",2,1,"Grand Junction, CO",Suplizio Field,NA,NA,NA,NA,NA,NA
+"Thursday, June 30, 2022",2,5,NA,NA,1254,3:19, Andrew Burris , Marty Rover , Andrew Torfin,84 Mostly Sunny
+"Thursday, June 30, 2022",3,5,Colorado Springs. CO,UCHealth Park,925,3:13, Arturo Belmonte , Gary Czachowski , Jaden Guidry,Cloudy. 61 Degrees.
+"Thursday, June 30, 2022",4,5,"Great Falls, Mt",Centene Stadium,1346,2:44, Kelly Atkinson , Brandon Snyder , Josh Garner,"75 Degrees, Partly Sunny"
+"Thursday, June 30, 2022",5,5,"Missoula, MT",Ogren Allegiance,1778,4:09, Micheal Chuckerman , Tony Prater , Ray Bidwell,Clear 79 degrees
+"Friday, July 01, 2022",1,5,Lindquist Field,NA,4205,NA, Jordan Smart , Ryan Hansen , William Minter,
+"Friday, July 01, 2022",2,5,"Grand Junction, CO",Suplizio Field,1428,3:00, Marty Rover , Andrew Torfin , Lou Brown,81 Mostly Cloudy
+"Friday, July 01, 2022",3,5,UC Health Park,NA,2316,2:31, Jaden Guidry , Bill Burger , Arturo Belmonte,58
+"Friday, July 01, 2022",4,5,"Great Falls, MT",Centene Stadium,1259,2:55,NA,NA,NA,"82 degrees, partly cloudy, Wes"
+"Friday, July 01, 2022",5,5,Missoula. MT,Ogren Allegiance,4619,3:25, Tony Prater , Nick Janke , Micheal Chuckerman,Partly Cloudy 86 degrees
+"Saturday, July 02, 2022",1,5,"Grand Junction, CO",Suplizio Field,1711,3:30, William Minter , Jordan Smart , Lou Brown,NA
+"Saturday, July 02, 2022",2,5,UC Health Park,NA,1216,3:12, Cameron Monaco , Doug Hodges , Kenny Adducci,62
+"Saturday, July 02, 2022",3,5,"Great Falls, MT",Centene Stadium,1475,3:59,NA,NA,NA,"83 degrees, mostly sunny, west"
+"Saturday, July 02, 2022",5,5,"Garden City, Idaho",Memorial Stadium,4447,3:25, Arturo Belmonte , Jaden Guidry , Nathan Elkins,92 Sunny
+"Sunday, July 03, 2022",1,5,"Grand Junction, CO",Suplizio Field,1393,2:52, Lou Brown , Jordan Smart , William Minter,85 Mostly Cloudy
+"Sunday, July 03, 2022",2,5,UC Health Park,NA,1608,2:47, Ryan Hansen , Kenny Adducci , Doug Hodges,78
+"Sunday, July 03, 2022",3,5,"Idaho Falls, ID",Melaleuca Field,300,1:54, Mike Colson , Mike Chuckerman , Anthony Prater,NA
+"Sunday, July 03, 2022",4,5,"Great Falls, MT",Centene Stadium,1085,2:34,NA,NA,NA,"64 degrees, cloudy, east"
+"Sunday, July 03, 2022",5,5,"Idaho Falls, ID",Melaleuca Field,2843,2:43, Mike Chuckerman , Anthony Prater , Mike Colson,NA
+"Sunday, July 03, 2022",6,5,"Garden City, Idaho",Memorial Stadium,4533,3:58, Jaden Guidry , Nathan Elkins , Arturo Belmonte,88 Sunny
+"Monday, July 04, 2022",2,5,"Grand Junction, CO",Suplizio Field,4472,3:31,NA,NA,NA,NA
+"Monday, July 04, 2022",2,6,NA,NA,NA,NA, Jordan Smart , Lyle Mangum , William Minter,NA
+"Monday, July 04, 2022",3,6,"Idaho Falls, ID",NA,2122,3:55, Anthony Prater , Mike Colson , Mike Chuckerman,NA
+"Monday, July 04, 2022",4,6,UC Health Park,NA,4690,2:38 PM, Ryan Hansen , Daniel Muth,NA,72
+"Monday, July 04, 2022",5,6,"Boise, ID",Memorial Stadium,4779,3:22, Arturo Belmonte , Jaden Guidry , Joshua Garcia,79 Sunny
+"Tuesday, July 05, 2022",1,6,"Idaho Falls, ID",Melaleuca Field,1414,3:02, Rick Dayley , Mike Chuckerman , Anthony Prater,Fair
+"Tuesday, July 05, 2022",2,6,Flathead Field,NA,2004,3:12,NA,NA,NA,
+"Wednesday, July 06, 2022",1,6,"Idaho Falls, ID",Melaleuca Field,1487,3:10, Mike Chuckerman , Tony Prater , Rick Dayley,Fair
+"Wednesday, July 06, 2022",2,6,Greeley,NA,NA,NA,NA,NA,NA,NA
+"Wednesday, July 06, 2022",2,5,NA,Jackson Field,30,2:55, Ryan Roark , Gary Czachowski , Sean Grogan,NA
+"Wednesday, July 06, 2022",3,5,"Billings, Mont.",Dehler Park,2109,2:56, Kelly Atkinson , Larry Schmitt , Brandon Snyder,"79, partly cloudy"
+"Wednesday, July 06, 2022",4,5,Flathead Field,NA,1933,3:10,NA,NA,NA,
+"Wednesday, July 06, 2022",5,5,UC Health Park,NA,516,2:35, Rob Minter , Doug Hodges , Jordan Smart,64
+"Thursday, July 07, 2022",1,5,"Idaho Falls, ID",Melaleuca Field,2455,NA,NA,NA,NA,NA
+"Thursday, July 07, 2022",1,2,NA,NA,NA,2:40, Tony Prater , Rick Dayley , Mike Chuckerman,"Hot, Clear Skies"
+"Thursday, July 07, 2022",2,2,Flathead Field,NA,1965,4:20,NA,NA,NA,
+"Thursday, July 07, 2022",3,2,"Greeley, Colo.",Jackson Field,46,3:05,NA,NA,NA,NA
+"Thursday, July 07, 2022",3,5,NA,NA,NA,NA, Dennis Smythe , Sean Grogan , Ryan Roark,
+"Thursday, July 07, 2022",4,5,UC Health Park,NA,764,2:23, Cameron Monaco , Jordan Smart , Rob Minter,79
+"Thursday, July 07, 2022",5,5,"Billings, MT",Dehler Park,2236,3:23, Larry Schmitt , Brandon Schneider , Kelly Atkinson,85 Overcast
+"Thursday, July 07, 2022",6,5,UC Health Park,NA,764,2:04, Jordan Smart , Rob Minter , Cameron Monaco,71
+"Friday, July 08, 2022",1,5,"Idaho Falls, ID",Melaleuca Field,1912,3:39, Scott Esterholt , Mike Chuckerman , Tony Prater,"Hot, Clear Skies"
+"Friday, July 08, 2022",2,5,"Billings, Mont.",Dehler Park,2413,NA, Brandon Snyder , Kelly Atkinson , Craig Berube,NA
+"Friday, July 08, 2022",2,6,NA,NA,NA,NA,NA,NA,NA,"93, partly cloudy"
+"Friday, July 08, 2022",3,6,"Missoula, MT",Ogren Allegiance,2210,3:01, Ray Bidwell , Jadn Guidry , Arturo Belmonte,Partly Cloudy 87 degrees
+"Friday, July 08, 2022",4,6,"Greeley, Colo.",Jackson Field,29,2:30, Sean Grogan , Bill Berger , Dennis Smythe,
+"Friday, July 08, 2022",5,6,"Greeley, CO",Jackson Fields,29,2:09, Bill Berger , Sean Grogan , Dennis Smythe,
+"Friday, July 08, 2022",6,6,"Colorado Springs, CO",UCHealth Park,2130,3:36, Cameron Monaco , Rob Minter , Jordan Smart,Mostly Sunny. 80 Degrees.
+"Saturday, July 09, 2022",1,6,"Idaho Falls, ID",Melaleuca Field,2659,4:19, Mike Chuckerman , Tony Prater , Scott Esterholt,
+"Saturday, July 09, 2022",2,6,"Colorado Springs, CO",UCHealth Park,1866,2:57, Rob Minter , Jordan Smart , Bill Berger,Sunny. 91 Degrees.
+"Saturday, July 09, 2022",3,6,"Missoula, MT",Ogren Allegiant,1823,3:12, Arturo Belmonte , Jaden Guidry,NA,"Partly Cloudy, 85F"
+"Saturday, July 09, 2022",4,6,"Greeley, CO",Jackson Field,43,2:24, Ryan Roark , Sean grogan , Rob Montoya,NA
+"Saturday, July 09, 2022",5,6,"Greeley, CO",Jackson Field,43,3:06, Rob Montoya , Ryan Roark , Sean Grogan,
+"Saturday, July 09, 2022",6,6,"Billings, MT",Dehler Park,3112,3:37, Kelly Atkinson , Craig Berube , Brandon Schneider,Sunny 95
+"Sunday, July 10, 2022",1,6,"Billings, MT",Dehler Park,1864,2:50, Craig Berube , Brandon Snyder , Kelly Atkinson,"Clear skies, 92 degrees"
+"Sunday, July 10, 2022",2,6,"Idaho Falls, ID",Melaleuca Field,1388,2:42, Tony Prater , Mike Chuckerman , Stu Bergman,
+"Sunday, July 10, 2022",3,6,"Missoula, MT",Ogren Allegiant,1670,4:01, Jayden Guidry , Arturo Belmonte,NA,"Partly Cloudy, 77F"
+"Sunday, July 10, 2022",4,6,"Colorado Springs, CO",UCHealth Park,1881,2:57, Jordan Smart , Bill Berger , Rob Minter,Mostly Sunny. 89 Degrees.
+"Monday, July 11, 2022",1,6,Flathead Field,NA,1504,2:40,NA,NA,NA,
+"Tuesday, July 12, 2022",1,6,Lindquist Field,NA,3084,NA, Lyle Mangum , Ryan Hansen , Anthony Winston,
+"Tuesday, July 12, 2022",2,6,"Great Falls, Mt",Centene Stadium,1471,3:20, Josh Garner , Arturo Belmonte , Jaden Guidry,"91 Degrees, Sunny, 6 mph SW"
+"Tuesday, July 12, 2022",3,6,"Grand Junction, CO",Suplizio Field,1193,3:05, Andrew Burris , Rob Minter , Jordan Smart,100 Partly Cloudy
+"Tuesday, July 12, 2022",4,6,Flathead Field,NA,NA,NA,NA,NA,NA,NA
+"Tuesday, July 12, 2022",4,4,NA,NA,1467,3:10,NA,NA,NA,
+"Tuesday, July 12, 2022",5,4,"Boise, ID",Memorial Stadium,4111,3:47, Kelly Atkinson , Brandon Coley , Brandon Snyder,101 Sunny
+"Wednesday, July 13, 2022",1,4,"Boise, ID",Memorial Stadium,3513,3:00, Nathan Elkins , Brandon Snyder , Kelly Atkinson,99 Sunny
+"Wednesday, July 13, 2022",2,4,"Great Falls, Mt",Centene Stadium,1113,4:02, Arturo Belmonte , Jaden Guidry , Josh Garner,"89 Degrees, Overcast, 10 mph S"
+"Wednesday, July 13, 2022",3,4,"Grand Junction, CO",Suplizio Field,1334,4:43,NA,NA,NA,NA
+"Wednesday, July 13, 2022",3,1,NA,NA,NA,NA, Rob Minter , Jordan Smart , Andrew Burris,NA
+"Wednesday, July 13, 2022",4,1,Flathead Field,NA,1662,2:50,NA,NA,NA,NA
+"Wednesday, July 13, 2022",4,5,NA,NA,NA,NA,NA,NA,NA,
+"Wednesday, July 13, 2022",5,5,"Boise, ID",Memorial Stadium,2477,2:52, Nathan Elkins , Brandon Snyder , Kelly Atkinson,90 Overcast
+"Wednesday, July 13, 2022",6,5,Lindqiest Field,NA,3441,NA, Ryan Hansen , Anthony Preston , Lars Birkeland,
+"Thursday, July 14, 2022",1,5,Lindquist,NA,4485,NA, Anthony Preston , Lars Birkeland , Ryan Hansen,
+"Thursday, July 14, 2022",2,5,"Great Falls, Mt",Centene Stadium,2158,3:07, Jeff Ball , Jaden Guidry , Arturo Belmonte,"92 Degrees, Sunny, 9 mph NE"
+"Thursday, July 14, 2022",3,5,"Grand Junction, CO",Suplizio Field,1696,2:41, Jordan Smart , Andrew Burris , Rob Minter,98 Partly Cloudy
+"Thursday, July 14, 2022",4,6,Flathead Field,NA,1446,3:08,NA,NA,NA,
+"Thursday, July 14, 2022",5,6,"Boise, ID",Memorial Stadium,3298,2:55, Brandon Snyder , Dion Dice , Kelly Atkinson,101 Clear
+"Friday, July 15, 2022",1,6,Lindquist field,NA,5308,2:45, Lyle Mangum , Ryan Hansen , Anthony Preston,NA
+"Friday, July 15, 2022",2,6,"Great Falls, Mt",Centene Stadium,3046,3:06, Jaden Guidry , Arturo Belmonte , Chuck Nelson,"92 Degrees, Sunny, 15 mph SW"
+"Friday, July 15, 2022",3,6,Flathead Field,NA,1801,2:53,NA,NA,NA,
+"Friday, July 15, 2022",4,6,"Garden City, Idaho",NA,3997,3:37, Dion Dice , Kelly Atkinson , Brandon Snyder,Sunny 98
+"Saturday, July 16, 2022",1,6,Lindquist field,NA,4240,NA, Ryan Hansen , Anthony Preston , Lyle Mangum,NA
+"Saturday, July 16, 2022",1,5,NA,NA,NA,NA,NA,NA,NA,
+"Saturday, July 16, 2022",2,5,"Great Falls, MT",Centene Stadium,1333,2:57,NA,NA,NA,"93 degrees, sunny, 8 mph NW"
+"Saturday, July 16, 2022",3,5,"Grand Junction, CO",Suplizio Field,2071,2:36, Andrew Torfin , Rob Minter , Jordan Smart,96 Sunny
+"Saturday, July 16, 2022",4,5,Flathead Field,NA,1672,2:50,NA,NA,NA,NA
+"Saturday, July 16, 2022",5,5,"Garden City, Idaho",NA,3304,5:04, Kelly Atkinson , Brandon Snyder , Dion Dice,Sunny 101
+"Sunday, July 17, 2022",1,5,Lindquist Field,NA,1707,NA, Anthony Preston , Lyle Mangum , Ryan Hansen,
+"Sunday, July 17, 2022",2,5,Flathead Field,NA,1593,NA,NA,NA,NA,NA
+"Sunday, July 17, 2022",2,4,NA,NA,NA,3:20, Michael ChuKarman , Will Stacey , Tony Prater,NA
+"Sunday, July 17, 2022",3,4,"Garden City, Idaho",NA,2279,3:35, Brandon Snyder , Dion Dice , Kelly Atkinson,86 Partly Sunny
+"Sunday, July 17, 2022",4,4,"Grand Junction, CO",Suplizio Field,1384,2:19, Rob Minter , Jordan Smart , Andrew Torfin,NA
+"Sunday, July 17, 2022",5,4,"Great Falls, Mt",Centene Stadium,850,3:30, Arturo Belmonte , Jaden Guidry , Chuck Nelson,"98 Degrees, Sunny, 8 mph WSW"
+"Sunday, July 17, 2022",6,4,"Grand Junction, CO",NA,NA,NA,NA,NA,NA,NA
+"Sunday, July 17, 2022",6,5,NA,Suplizio Field,1142,2:17, Jordan Smart , Andrew Torfin , Rob Minter,100 Sunny
+"Tuesday, July 19, 2022",1,5,UC Health Park,NA,1591,2:28, Doug Hodges , Gary Czachowski , Bill Burger,78
+"Tuesday, July 19, 2022",2,5,"Billings, MT",Dehler Park,2624,2:15, Arturo Belmonte , Jaden Guidry , Craig Berube,"Clear skies, 96 degrees"
+"Tuesday, July 19, 2022",3,5,"Boise, ID",Memorial Stadium,2645,3:15, Greg Xepoleas , Anthony Prater , Michael Chuckerman,NA
+"Tuesday, July 19, 2022",4,5,"Idaho Falls, ID",Melaleuca Field,3246,NA,NA,NA,NA,NA
+"Tuesday, July 19, 2022",4,6,NA,NA,NA,4:19, Tegan Smith , Rob Minter , Jordan Smart,
+"Tuesday, July 19, 2022",5,6,"Missoula, MT",Ogren Allegiance,1493,3:00,NA, Kelly Atkinson , Matthew Newman ,NA
+"Wednesday, July 20, 2022",1,6,"Billings, MT",Dehler Park,2317,3:25, Jaden Guidry , Cameron Bjornstad , Arturo Belmonte,"Sunny, 95"
+"Wednesday, July 20, 2022",2,6,"Boise, ID",Memorial Stadium,2913,3:18, Anthony Parker , Michael Chuckerman , Dion Dice,"Sunny, 100"
+"Wednesday, July 20, 2022",3,6,UC Health Park,NA,1368,3:25, Gary Czachowski , Bill Burger , Doug Hodges,NA
+"Wednesday, July 20, 2022",4,6,"Missoula, MT",Ogren Allegiance,1624,3:10, Brandon Snyder , Kelly Atkinson , Matthew Newman,NA
+"Wednesday, July 20, 2022",5,6,"Idaho Falls, ID",NA,NA,NA,NA,NA,NA,NA
+"Wednesday, July 20, 2022",5,5,NA,Melaleuca Field,2977,4:10, Rob Minter , Jordan Smart , Tegan Smith,NA
+"Thursday, July 21, 2022",1,5,"Boise, ID",Memorial Stadium,3231,3:25, Michael Chuckerman , Greg Xepoleas , Anthony Prater,NA
+"Thursday, July 21, 2022",2,5,"Billings, Mont.",Dehler Park,1995,3:18, Cameron Bjornstad , Arturo Belmonte , Jaden Guidry,NA
+"Thursday, July 21, 2022",3,5,UC Health Park,NA,1690,2:49, Bill Berger , Doug Hodges,NA,NA
+"Thursday, July 21, 2022",4,5,"Missoula, MT",Ogren Aleegiance,1540,3:37, Kelly Atkinson , Matthew Newman , Brandon Snyder,NA
+"Thursday, July 21, 2022",5,5,"Idaho Falls, ID",Melaleuca Field,3043,3:17, Jordan Smart , Tegan Smith , Rob Minter,NA
+"Friday, July 22, 2022",1,5,"Garden City, Idaho",Memorial Stadium,3606,3:21, Greg Xepoleas , Anthony Prater , Michael Chukerman,NA
+"Friday, July 22, 2022",2,5,Flathead Field,NA,1941,3:51,NA,NA,NA,NA
+"Friday, July 22, 2022",3,5,Greeley,Jackson Field,36,2:49, Nick Ramos , John Speaker , Cameron Monaco,NA
+"Friday, July 22, 2022",4,5,"Billings, Mont.",Dehler Park,2387,2:56, Arturo Belmonte , Jaden Guidry , Cameron Bjornstad,NA
+"Friday, July 22, 2022",5,5,"Missoula, MT",Ogren Allegiance,3163,3:20, Matthew Newman , Brandon Snyder , Kelly Atkinson,NA
+"Saturday, July 23, 2022",1,5,"Garden City, Idaho",Memorial Stadium,3997,2:54, Anthony Prater , Michael Chukerman , Greg Xepoleas,NA
+"Saturday, July 23, 2022",2,5,"Billings, MT",Dehler Park,3061,2:50, Jaden Guidry , Cameron Bjornstad , Arturo Belmonte,NA
+"Saturday, July 23, 2022",3,5,"Missoula, MT",Ogren Allegiant,1724,3:22, Kelly Atkinson , Brandon Snyder , Matthew Newman,NA
+"Saturday, July 23, 2022",4,5,Flathead Field,Flathead Field,1683,3:03,NA,NA,NA,NA
+"Sunday, July 24, 2022",1,5,"Garden City, Idaho",Memorial Stadium,2598,3:50, Michael Chukerman , Greg Xepoleas , Anthony Prater,NA
+"Sunday, July 24, 2022",2,5,"Billings, MT",Dehler Park,2143,2:19, Cameron Bjornstad , Arturo Belmonte , Jaden Guidry,NA
+"Sunday, July 24, 2022",3,5,Greeley,Jackson Field,90,2:51, Rob Montoya , Nick Ramos , Kenny Adducci,NA
+"Sunday, July 24, 2022",4,5,"Missoula, MT",Ogren Allegiant,1124,3:24, Kelly Atkinson , Mattherw Newman , Brandon Snyder,NA
+"Sunday, July 24, 2022",5,5,"Kalispell, MT",Flathead Field,1268,3:05,NA,NA,NA,NA
+"Tuesday, July 26, 2022",1,5,"Grand Junction, CO",Suplizio Field,1317,3:06, Andrew Burris , Jayden Gidry , Arturo Belmonte,NA
+"Tuesday, July 26, 2022",2,4,Lindquist field,NA,3490,NA, Ryan Hansen , William Minter , Jordan Smart,NA
+"Tuesday, July 26, 2022",3,4,Greeley,Jackson Field,31,3:16, Bill Berger , Dennis Smythe , Gary Schakowzki,NA
+"Tuesday, July 26, 2022",4,4,"Great Falls, Mt",Centene Stadium,1506,2:48, Shad Chrisman , Tony Prater , Nate Elkins,NA
+"Tuesday, July 26, 2022",5,4,Flathead Field,NA,1722,2:42,NA,NA,NA,NA
+"Wednesday, July 27, 2022",1,4,Greeley,Jackson Field,38,NA,NA,NA,NA,NA
+"Wednesday, July 27, 2022",1,5,NA,NA,NA,2:35, Dennis Smythe , Gary Czachowski , Bill Berger,NA
+"Wednesday, July 27, 2022",2,5,"Grand Junction, CO",Suplizio Field,1318,3:16, Jaden Gidry , Arturo Belmonte , Andrew Burris,NA
+"Wednesday, July 27, 2022",3,5,Lindquist,NA,3186,NA, William Minter , Jordan Smart , Ryan Hansen,NA
+"Wednesday, July 27, 2022",4,5,"Great Falls, Mt",Centene Stadium,1400,2:42, Tony Prater , Nate Elkins , Shad Chrisman,NA
+"Wednesday, July 27, 2022",5,5,Flathead Field,NA,1534,2:55,NA,NA,NA,NA
+"Thursday, July 28, 2022",1,5,"Grand Junction, CO",Suplizio Field,1228,2:53, Arturo Belmonte , Andrew Burris , Jaden Gidry,NA
+"Thursday, July 28, 2022",2,5,Lindquist field,NA,4787,NA, Jordan Smart , Ryan Hansen , William Minter,NA
+"Thursday, July 28, 2022",3,5,"Great Falls, Mt",Centene Stadium,1187,3:30, Nate Elkins , Shad Chrisman , Tony Prater,NA
+"Thursday, July 28, 2022",4,5,Flathead Field,NA,1567,2:45,NA,NA,NA,NA
+"Friday, July 29, 2022",1,5,"Greeley, CO",Jackson Field,47,2:45, Rob Montoya , Sean Grogan , Darryl Dale,NA
+"Friday, July 29, 2022",2,5,Lindquist Field,NA,3472,NA, Michael DeBoer , Ryan Hansen , Jordan Smart,NA
+"Friday, July 29, 2022",3,5,"Great Falls, Mt",Centene Stadium,1898,3:28, Andy Anderson , Tony Prater , Nate Elkins,NA
+"Friday, July 29, 2022",4,5,"Grand Junction, CO",Suplizio Field,2111,3:09, Caden Gaurmer , Jaden Gidry , Arturo Belmonte,NA
+"Friday, July 29, 2022",5,5,Flathead Field,NA,1650,3:05,NA,NA,NA,NA
+"Saturday, July 30, 2022",1,5,"Greeley, CO",NA,0,2:04, Sean Grogan , Darryl Dale, Rob Montoya,NA
+"Saturday, July 30, 2022",2,5,"Greeley, CO",Jackson Field,75,2:14, Darryl, Rob Montoya , Sean Grogan,NA
+"Saturday, July 30, 2022",3,5,"Grand Junction, CO",Suplizio Field,1936,2:34,NA,NA,NA,NA
+"Saturday, July 30, 2022",3,4,NA,NA,NA,NA, Jaden Gidry , Arturo Belmonte , Caden Gaurmer,NA
+"Saturday, July 30, 2022",4,4,Lindquist Field,NA,3615,NA, Ryan Hansen , Micheal Deboer , Jordan Smart,NA
+"Saturday, July 30, 2022",5,4,"Great Falls, Mt",Centene Stadium,1178,3:18, Tony Prater , Nate Elkins , Andy Anderson,NA
+"Saturday, July 30, 2022",6,4,Flathead Field,NA,1593,3:25,NA,NA,NA,NA
+"Sunday, July 31, 2022",1,4,"Greeley, CO",Jackson Field,47,3:28, Rob Montoya , Sean Grogan , Darryl Dale,NA
+"Sunday, July 31, 2022",2,5,Flathead Field,NA,1759,2:41,NA,NA,NA,NA
+"Sunday, July 31, 2022",3,5,Lindquist Field,NA,1307,NA, Jordan Smart , Ryan Hansen , Micheal Deboer,NA
+"Sunday, July 31, 2022",4,5,"Grand Junction, CO",Suplizio Field,1197,2:55, Marty Rover , Jaden Gidry , Arturo Belmonte,NA
+"Sunday, July 31, 2022",5,5,"Great Falls, Mt",Centene Stadium,1023,3:34, Nate Elkins , Andy Anderson , Tony Prater,NA
+"Tuesday, August 02, 2022",1,5,UC Health Park,NA,2234,2:58, Rob Minter , Kevin Ainsworth,NA,NA
+"Tuesday, August 02, 2022",2,5,"Grand Junction, CO",NA,NA,NA,NA,NA,NA,NA
+"Tuesday, August 02, 2022",2,6,NA,Suplizio Field,1130,3:06, Andrew Burris , Caden Gaurmer , Matt Barker,NA
+"Tuesday, August 02, 2022",3,6,"Billings, MT",Dehler Park,2294,2:36, Michael Chukerman , Jordan Smart , Stu Bertrand,NA
+"Tuesday, August 02, 2022",4,6,"Idaho Falls, ID",Melaleuca Field,2009,3:24, Brandon Snyder , Kelly Atkinson , Mike Colson,NA
+"Tuesday, August 02, 2022",5,6,"Missoula, MT",Ogren Allegiance,2019,3:30, Eric Martinez , Mike Carr , Ray Bidwell,NA
+"Wednesday, August 03, 2022",1,6,UC Health Park,NA,1213,3:00, Anthony Prater , Gary Czachowski , Rob Minter,NA
+"Wednesday, August 03, 2022",2,6,"Grand Junction, CO",Suplizio Field,1255,3:14,NA,NA,NA,NA
+"Wednesday, August 03, 2022",2,5,NA,NA,NA,NA, Matt Barker , Andrew Burris , Caden Gaurmer,NA
+"Wednesday, August 03, 2022",3,5,"Billings, MT",Dehler Park,2163,2:56, Jordan Smart , Larry Schmitt , Michael Chukerman,NA
+"Wednesday, August 03, 2022",4,5,"Idaho Falls, ID",Melaleuca Field,2869,3:45, Kelly Atkinson , Mike Colson , Brandon Snyder,NA
+"Wednesday, August 03, 2022",5,5,"Missoula, MT",Ogren Allegiance,1753,3:53, Mike Karr , Raymond Bidwell , Eric Martinez,NA
+"Thursday, August 04, 2022",1,5,UC Health,NA,1379,2:59, Gary Czachowski , Rob Minter , Anthony Prater,NA
+"Thursday, August 04, 2022",2,5,"Grand Junction, CO",Suplizio Field,1281,2:50, Caden Gaurmer , Matt Barker , Andrew Torfin,NA
+"Thursday, August 04, 2022",3,5,"Billings, Mont.",Dehler Park,2093,3:28, Larry Schmitt , Michael Chukerman , Jordan Smart,NA
+"Thursday, August 04, 2022",4,5,"Idaho Falls, ID",Melaleuca Field,3290,2:49, Mike Colson , Brandon Snyder , Kelly Atkinson,NA
+"Thursday, August 04, 2022",5,5,Missoula,Ogren Allegiance,1734,3:33, Ray Bidwell , Eric Martinez , Mike Karr,NA
+"Friday, August 05, 2022",1,5,"Grand Junction, CO",Suplizio Field,3122,3:20, Ted Weber , Marty Rover , Lou Brown,NA
+"Friday, August 05, 2022",2,5,UC Health,NA,5657,2:56, Rob Minter , Anthony Prater , Gary Czachowski,NA
+"Friday, August 05, 2022",3,5,"Billings, Mont.",Dehler Park,3128,3:10, Stu Bertrand , Michael Chukerman , Jordan Smart,NA
+"Friday, August 05, 2022",4,5,"Great Falls, Mt",Centene Stadium,1541,2:20, Eric Martinez , Mike Carr , Andy Anderson,NA
+"Friday, August 05, 2022",5,5,"Garden City, Idaho",Memorial Stadium,4107,3:34," Dave ""Buck"" Fry ", Kelly Atkinson , Brandon Snyder,NA
+"Saturday, August 06, 2022",1,5,UC Health Park,NA,3479,2:40, Anthony Praiter , Rob Minter , Luis Villalobos,NA
+"Saturday, August 06, 2022",2,5,"Grand Junction, CO",Suplizio Field,1962,3:43, Marty Rover , Lou Brown , Ted Weber,NA
+"Saturday, August 06, 2022",3,5,"Great Falls, Mt",Centene Stadium,1169,3:03, Mike Carr , Andy Anderson , Eric Martinez,NA
+"Saturday, August 06, 2022",4,5,"Garden City, Idaho",Memorial Stadium,2997,3:48, Kelly Atkinson , Brandon Snyder ," Dave ""Buck"" Fry",NA
+"Saturday, August 06, 2022",5,5,Flathead field,NA,2053,2:59,NA,NA,NA,NA
+"Sunday, August 07, 2022",1,5,Flathead field,NA,1467,2:54,NA,NA,NA,NA
+"Sunday, August 07, 2022",2,5,"Garden City, Idaho",Memorial Stadium,2484,3:17, Brandon Snyder ," Dave ""Buck"" Fry ", Kelly Atkinson,NA
+"Sunday, August 07, 2022",3,5,"Grand Junction, CO",Suplizio Field,1276,3:43, Lou Brown , Tes Weber , Marty Rover,NA
+"Sunday, August 07, 2022",4,5,"Great Falls, Mt",Centene Stadium,1246,3:08, Andy Anderson , Eric Martinez , Mike Carr,NA
+"Sunday, August 07, 2022",5,5,UC Health Park,NA,2098,3:23, Luis Villalobos , Anthony Prater , Rob Minter,NA
+"Tuesday, August 09, 2022",1,5,"Johnstown, CO",Nelson Farm Park,81,3:33, Rob Minter , Tony Praiter , Sean Grogan,NA
+"Tuesday, August 09, 2022",3,5,Flathead field,NA,1697,3:20,NA,NA,NA,NA
+"Tuesday, August 09, 2022",4,5,"Idaho Falls, ID",Melaleuca Field,1745,3:02, Eric Martinez , Mike Carr , Scott Esterholt,NA
+"Tuesday, August 09, 2022",5,5,"Missoula, MT",Ogren-Allegiance,1392,3:15, Stu Bertrand , Micheal Chuckerman , Jordan Smart,NA
+"Wednesday, August 10, 2022",1,5,Johnstown,Nelson Farms Park,79,2:41, Tony Prater , Sean Grogan , Rob Minter,NA
+"Wednesday, August 10, 2022",2,5,Flathead field,NA,1538,2:52,NA,NA,NA,NA
+"Wednesday, August 10, 2022",3,5,"Idaho Falls, ID",Melaleuca Field,1941,3:13, Mike Carr , Scot Esterholt , Eric Martinez,NA
+"Wednesday, August 10, 2022",4,5,"Missoula, MT",Ogren-Allegiance,1221,2:59, Micheal Chuckerman , Jordan Smart , Stu Bertrand,NA
+"Thursday, August 11, 2022",1,5,Lindquist,NA,2755,3:01, Kevin Macho , Lars Birkeland , Brandon RIley,NA
+"Thursday, August 11, 2022",2,5,Johnstown,Nelson Farm Park,80,3:23, Sean Grogan , Rob Minter , Tony Prater,NA
+"Thursday, August 11, 2022",3,5,Lindquist,NA,5287,2:27, Lars Birkeland , Ryan Hansen , Kevin Macho,NA
+"Thursday, August 11, 2022",4,5,Flathead Field,NA,1636,3;16,NA,NA,NA,NA
+"Thursday, August 11, 2022",5,5,"Idaho Falls, ID",Melaleuca Field,1723,3:24, Scott Esterholt , Eric Martinez , Mike Carr,NA
+"Thursday, August 11, 2022",6,5,"Missoula, MT",Ogren Allegiance,1415,3:37, Jordan Smart , Stu Bertrand , Michael Chuckerman,NA
+"Friday, August 12, 2022",1,5,Johnstown,Nelson Park Farm,117,3:12, Rob Minter , Kevin Ainsworth , Tony Prater,NA
+"Friday, August 12, 2022",2,5,Lindquist,NA,5138,3:21, Ryan Hansen , Anthony Preston , Trent Allred,NA
+"Friday, August 12, 2022",3,5,"Garden City, Idaho",Memorial Stadium,4679,3:30, Stu Bertrand , Jordan Smart , Michael Chukerman,NA
+"Friday, August 12, 2022",4,5,Flathead field,NA,NA,NA,NA,NA,NA,NA
+"Friday, August 12, 2022",4,4,NA,NA,1629,2:33,NA,NA,NA,NA
+"Friday, August 12, 2022",5,4,"Idaho Falls, ID",Melaleuca Field,1829,3:34, Eric Martinez , Mike Carr , Blair Pippo,NA
+"Saturday, August 13, 2022",1,4,"Johnstown, CO",Nelson Farm Park,209,2:28, Ryan Roark , Tony Prater , Rob Minter,NA
+"Saturday, August 13, 2022",2,4,Lindquist,NA,4748,3:09, Anthony Preston , Trent Allred , Ryan Hansen,NA
+"Saturday, August 13, 2022",3,4,"Garden City, Idaho",Memorial Stadium,3126,NA,NA,NA,NA,NA
+"Saturday, August 13, 2022",3,6,NA,NA,NA,3:11, Jordan Smart , Michael Chukerman , Stu Bertrand,NA
+"Saturday, August 13, 2022",4,6,Flathead field,NA,1732,2:44,NA,NA,NA,NA
+"Saturday, August 13, 2022",5,6,"Idaho Falls, ID",Melaleuca Field,2869,3:12, Mike Carr , Blair Pippo , Eric Martinez,NA
+"Sunday, August 14, 2022",1,6,Johnstown,Nelson Farm Park,79,2:21, Tony Prater , Rob Minter , Ryan Roark,NA
+"Sunday, August 14, 2022",2,6,Flathead Field,NA,1386,2:55,NA,NA,NA,NA
+"Sunday, August 14, 2022",3,6,Lindquist,NA,1611,3:28, Trent Allred , Ryan Hansen , Anthony Preston,NA
+"Sunday, August 14, 2022",4,6,"Garden City, Idaho",Memorial Stadium,2252,3:17, Michael Chukerman , Stu Bertrand , Jordan Smart,NA
+"Sunday, August 14, 2022",5,5,"Idaho Falls, ID",Melaleuca Field,881,3:42, Blair Pippo , Eric Martinez , Mike Carr,NA
+"Tuesday, August 16, 2022",2,5,"Great Falls, MT",Centene Stadium,1916,3:08,NA,NA,NA,NA
+"Tuesday, August 16, 2022",3,5,Flathead Field,NA,1715,2:57,NA,NA,NA,NA
+"Tuesday, August 16, 2022",4,5,"Missoula, MT",Ogren Allegiance,1313,2:52, Brandon Snyder , Paul Graham , Nick Jahnke,NA
+"Wednesday, August 17, 2022",1,5,"Grand Junction, CO",Suplizio Field,1254,3:12, Caden Gaurmer , Tony Prater , William Minter,NA
+"Wednesday, August 17, 2022",3,5,"Great Falls, MT",Centene Stadium,1916,3:18,NA,NA,NA,NA
+"Wednesday, August 17, 2022",4,5,Flathead Field,NA,1576,3:00,NA,NA,NA,NA
+"Wednesday, August 17, 2022",5,5,"Missoula, MT",Ogren Allegiance,1712,3:10, Paul Graham , Nick Jahnke , Brandon Snyder,NA
+"Thursday, August 18, 2022",1,5,"Grand Junction, CO",Suplizio Field,1257,3:29, Tony Prater , William Minter , Caden Gaurmer,NA
+"Thursday, August 18, 2022",3,5,"Great Falls, Mt",Centene Stadium,1855,3:00, Jordan Smart , Stu Bertrand , Michael Chukerman,NA
+"Thursday, August 18, 2022",4,5,Flathead Field,NA,1674,2:50,NA,NA,NA,NA
+"Thursday, August 18, 2022",5,5,Ogren Park,NA,1788,3:35, Raymond Bidwell , Paul Graham , Brandon Snyder,NA
+"Friday, August 19, 2022",1,5,"Billings, MT",Dehler Park,2981,2:51, Stu Bertrand , Michael Chukerman , Jordan Smart,NA
+"Friday, August 19, 2022",3,5,Flathead field,NA,1519,3:10,NA,NA,NA,NA
+"Friday, August 19, 2022",4,5,"Missoula, MT",Ogren Allegiant,2347,3:16, Raymond Bidwell , Paul Graham , Bandon Snyder,NA
+"Saturday, August 20, 2022",1,5,"Grand Junction, CO",Suplizio Field,1146,2:00,NA,NA,NA,NA
+"Saturday, August 20, 2022",1,4,NA,NA,NA,NA, Rob Minter , Marty Rover , Tony Prater,NA
+"Saturday, August 20, 2022",2,4,"Grand Junction, CO",Suplizio Field,1819,2:35, Marty Rover , Tony Prater , Rob Minter,NA
+"Saturday, August 20, 2022",3,4,"Billings, MT",Dehler Park,2804,3:11, Michael Chukerman , Jordan Smart , Stu Bertrand,NA
+"Saturday, August 20, 2022",5,4,Flathead field,NA,1712,NA,NA,NA,NA,NA
+"Saturday, August 20, 2022",5,5,NA,NA,NA,2:34,NA,NA,NA,NA
+"Sunday, August 21, 2022",1,5,Flathead field,NA,1481,4:08,NA,NA,NA,NA
+"Sunday, August 21, 2022",2,5,Billings,Dehler Park,1796,3:02, Jordan Smart , Stu Bertrand , Michael Chukerman,NA
+"Sunday, August 21, 2022",3,5,"Missoula, MT",Ogren Allegiant,1776,3:05, Paul Graham , Raymond Bidwell , Brandon Snyder,NA
+"Sunday, August 21, 2022",4,5,Lindquist,NA,0,2:50, Micheal DeBoer , Sterling Davie , Ryan Hansen,NA
+"Sunday, August 21, 2022",5,5,"Grand Junction, CO",Suplizio Field,1245,2:29, Tony Prater , Rob Minter , Marty Rover,NA
+"Sunday, August 21, 2022",6,5,"Missoula, MT",Ogren Allegiance,1441,3:06, Josh Garnerl , Paul Graham , Brandon Snyder,NA
+"Monday, August 22, 2022",1,5,"Grand Junction, CO",Suplizio Field,1242,2:56, Andrew Torfin , Caden Gaurmer , Andrew Burris,NA
+"Tuesday, August 23, 2022",1,5,UC Health Park,NA,1907,3:03,NA,NA,NA,NA
+"Tuesday, August 23, 2022",1,4,NA,NA,NA,NA, Doug Hodges , Anthony Prater , Rob Minter,NA
+"Tuesday, August 23, 2022",2,4,"Grand Junction, CO",Suplizio Field,1338,3:29, Caden Gaurmer , Andrew Burris , Andrew Torfin,NA
+"Tuesday, August 23, 2022",3,4,"Billings, MT",Dehler Park,1610,3:15, Eric Martinez , Mike Carr , Larry Schmitt,NA
+"Tuesday, August 23, 2022",4,4,"Great Falls, Mt",Centene Stadium,1010,NA,NA,NA,NA,NA
+"Tuesday, August 23, 2022",4,5,NA,NA,NA,3:00, Brandon Snyder , Paul Graham , Josh Garner,NA
+"Tuesday, August 23, 2022",5,5,"Idaho Falls, ID",Melaleuca Field,2884,2:58, Stu Bertrand , Jordan Smart , Mike Colson,NA
+"Wednesday, August 24, 2022",2,5,"Billings, MT",Dehler Park,1705,3:10, Mike Carr , Larry Schmitt , Eric Martinez,NA
+"Wednesday, August 24, 2022",3,5,"Grand Junction, CO",Suplizio Field,1298,3:04, Lou Brown , Andrew Torfin , Caden Gaurmer,NA
+"Wednesday, August 24, 2022",5,5,"Idaho Falls, ID",Melaleuca Field,NA,NA,NA,NA,NA,NA
+"Wednesday, August 24, 2022",5,6,NA,NA,1673,3:15, Jordan Smart , Tegan Smith , Stu Bertrand,NA
+"Thursday, August 25, 2022",1,6,Johnstown,Nelson Farm Park,48,3:00, Gary Czachowksi , Darryl Dale, Cameron Monaco,NA
+"Thursday, August 25, 2022",3,6,"Billings, MT",Dehler Park,2086,2:51, Cameron Bjornstad , Eric Martinez , Mike Carr,NA
+"Thursday, August 25, 2022",4,6,"Idaho Falls, ID",Melaleuca Field,1920,3:00, Mike Colson , Stu Bertrand , Jordan Smart,NA
+"Friday, August 26, 2022",1,6,"Johnstown, CO",Nelson Farm Park,95,3:19, Darryl, Cameron Monaco , Craig Strubal,NA
+"Friday, August 26, 2022",3,6,"Billings, MT",Dehler Park,2361,3:27, Eric Martinez , Mike Carr , Craig Berube,NA
+"Friday, August 26, 2022",4,1,Flathead Field,NA,2211,3:28,NA,NA,NA,NA
+"Friday, August 26, 2022",5,1,"Idaho Falls, ID",Melaleuca Field,1988,NA,NA,NA,NA,NA
+"Friday, August 26, 2022",5,5,NA,NA,NA,3:56, Scott Esterholdt , Jordan Smart , Stu Bertrand,NA
+"Saturday, August 27, 2022",1,5,Johnstown,Nelson Farm Park,218,2:50, Daryl Dale, Nick Ramos , Sean Grogan,NA
+"Saturday, August 27, 2022",3,5,"Billings, MT",Dehler Park,2603,2:43, Mike Carr , Cameron Bjornstad , Eric Martinez,NA
+"Saturday, August 27, 2022",4,5,Flathead Field,NA,2608,2:47,NA,NA,NA,NA
+"Saturday, August 27, 2022",5,5,"Idaho Falls, ID",Melaleuca Field,2628,3:56, Stu Bertrand , Jordan Smart , Tegan Smith,NA
+"Sunday, August 28, 2022",1,5,Flathead Field,NA,2153,3:20,NA,NA,NA,NA
+"Sunday, August 28, 2022",2,5,"Billings, MT",Dehler Park,2114,2:49, Cameron Bjornstad , Eric Martinez , Mike Carr,NA
+"Sunday, August 28, 2022",3,5,"Idaho Falls, ID",NA,1586,3:42, Jordan Smart , Blair Pippo , Stu Bertrand,NA
+"Sunday, August 28, 2022",4,5,UC Health Park,NA,1651,3:51, Rob Minter , Tony Praiter,NA,NA
+"Monday, August 29, 2022",1,5,Johnstown,Nelson Farm Park,54,3:17,NA,NA,NA,NA
+"Monday, August 29, 2022",1,4,NA,NA,NA,NA, Rob Montoya , Sean Grogan , Ryan Roark,NA
+"Monday, August 29, 2022",2,4,Lindquist,NA,1873,2:14, Trent Allerd , Anthony Prater , William Minter,NA
+"Monday, August 29, 2022",3,4,"Great Falls, Mt",Centene Stadium,1032,4:08, Josh Garner , Paul Graham , Brandon Snyder,NA
+"Monday, August 29, 2022",4,4,"Garden City, Idaho",Memorial Stadium,2412,4:04, Eric Martinez , Mike Carr , Greg Xepoleas,NA
+"Monday, August 29, 2022",5,5,"Missoula, MT",Ogren Allegiance,1523,3:32, Michael Chuckerman , Stu Bertrand , Jordan Smart,NA
+"Tuesday, August 30, 2022",1,5,"Johnstown, CO",Nelson Farm Park,42,2:23, Ryan Roark , Daryl Dale, Rob Montoya,NA
+"Tuesday, August 30, 2022",2,5,Lindquist,NA,2739,NA, Anthony Prater , William Minter , Sterling Davie,NA
+"Tuesday, August 30, 2022",3,5,"Johnstown, CO",Nelson Farm Park,42,3:05, Daryl Dale, Rob Montoya , Ryan Roark,NA
+"Tuesday, August 30, 2022",4,5,"Great Falls, Mt",Centene Stadium,1125,3:50, Brandon Snyder , Josh Garner , Paul Graham,NA
+"Tuesday, August 30, 2022",5,5,"Garden City, Idaho",Memorial Stadium,2788,3:48, Mike Carr , Greg Xepoleas , Eric Martinez,NA
+"Tuesday, August 30, 2022",6,5,"Missoula, MT",Ogren Allegiance,1312,3:15, Stu Bertrand , Jordan Smart , Michel Chuckerman,NA
+"Wednesday, August 31, 2022",1,5,"Johnstown, CO.",Nelson Farm Park,45,3:20, Ryan Roark , Daryl Dale,NA,NA
+"Wednesday, August 31, 2022",2,4,Lindquist,NA,1787,3:27, William Minter , Anthony Preston , Anthony Parter,NA
+"Wednesday, August 31, 2022",3,4,"Great Falls, Mt",Centene Stadium,1420,2:53, Paul Graham , Brandon Snyder , Craig Struble,NA
+"Wednesday, August 31, 2022",4,4,"Garden City, Idaho",Memorial Stadium,2643,3:31, Greg Xepoleas , Eric Martinez , Mike Carr,NA
+"Wednesday, August 31, 2022",5,4,"Missoula, MT",Ogren Allegiance,1558,NA, Jordan Smart , Micheal Chuckerman , Stu Bertrand,NA
+"Thursday, September 01, 2022",1,5,Lindquist,NA,4086,NA, Ryan Hansen , Anthony Parter , William Minter,NA
+"Thursday, September 01, 2022",3,5,"Garden City, Idaho",Memorial Stadium,2488,2:38, Kelly Atkinson , Mike Carr , Eric Martinez,NA
+"Thursday, September 01, 2022",4,5,"Idaho Falls, ID",Melaleuca Field,2134,3:36, Blair Pippo , Brandon Snyder , Paul Graham,NA
+"Thursday, September 01, 2022",5,5,"Missoula, MT",Ogren Allegiance,1391,2:58, Micheal Chuckerman , Stu Bertrand , Jordan Smart,NA
+"Friday, September 02, 2022",2,5,Lindquist,NA,5868,3:12, Anthony Parter , William Minter , Ryan Hansen,NA
+"Friday, September 02, 2022",3,5,"Garden City, Idaho",Memorial Stadium,NA,NA,NA,NA,NA,NA
+"Friday, September 02, 2022",3,6,NA,NA,3241,3:31, Mike Carr , Kelly Atkinson , Eric Martinez,NA
+"Friday, September 02, 2022",4,6,"Idaho Falls, ID",Melaleuca Field,1685,3:54, Brandon Snyder , Paul Graham , Blair Pippo,NA
+"Friday, September 02, 2022",5,6,"Missoula, MT",Ogren Allegiant,2491,3:20, Stu Bertrand , Michael Chuckerman , Jordan Smart,NA
+"Saturday, September 03, 2022",1,6,Lindquist,NA,4688,NA, William Minter , Ryan Hansen , Anthony Parter,NA
+"Saturday, September 03, 2022",3,6,"Garden City, Idaho",Memorial Stadium,3013,3:31, Kelly Atkinson , Eric Martinez , Mike Carr,NA
+"Saturday, September 03, 2022",4,6,"Idaho Falls, ID",Melaleuca Field,3033,4:15, Paul Graham , Brandon Snyder,NA,NA
+"Saturday, September 03, 2022",5,6,"Missoula, MT",Ogren Allegiant,1624,NA,NA,NA,NA,NA
+"Saturday, September 03, 2022",5,5,NA,NA,NA,3:32, Jordan Smart , Michael Chuckerman , Stu Bertrand,NA
+"Monday, September 05, 2022",1,5,"Johnstown, CO",Nelson Farm Park,100,2:52, Tony Prater , Rob Minter,NA,NA
+"Monday, September 05, 2022",2,5,"Boise, Idaho",Memorial Stadium,2798,3:01, Greg Xepoleas , Brandon Snyder , Paul Graham,NA
+"Monday, September 05, 2022",3,5,"Billings, MT",Dehler Park,2013,3:03, Michael Chuckerman , Stu Bertrand , Jordan Smart,NA
+"Monday, September 05, 2022",5,5,Flathead Field,NA,2390,3:34,NA,NA,NA,NA
+"Tuesday, September 06, 2022",1,5,Grand Junction,Suplizio Field,1461,2:20, Cayden Garmer , Marty Rover , Andrew Burris,NA
+"Tuesday, September 06, 2022",2,5,"Johnstown, CO",Nelson Farm Park,46,3:26, Cameron Monaco , Tony Prater , Rob Minter,NA
+"Tuesday, September 06, 2022",3,5,Grand Junction,NA,1326,2:29, Marty Rover , Andrew Burris , Cayden Garmer,NA
+"Tuesday, September 06, 2022",4,5,"Billings, MT",Dehler Park,1543,2:46, Larry Schmitt , Jordan Smart , Michael Chukerman,NA
+"Tuesday, September 06, 2022",5,5,"Garden City, Idaho",Memorial Stadium,2302,3:34, Brandon Snyder , Paul Graham , Greg Xepoleas,NA
+"Tuesday, September 06, 2022",6,5,Flathead Field,NA,2085,2:50,NA,NA,NA,NA
+"Wednesday, September 07, 2022",1,5,"Johnstown, CO.",Nelson Farm Park,49,3:16, Gary Czachowski , Rob Minter , Tony Prater,NA
+"Wednesday, September 07, 2022",2,5,Grand Junction,NA,1507,3:21,NA,NA,NA,NA
+"Wednesday, September 07, 2022",3,5,"Billings, MT",Dehler Park,1709,2:29, Jordan Smart , Michael Chukerman , Larry Schmitt,NA
+"Wednesday, September 07, 2022",4,5,"Garden City, Idaho",Memorial Stadium,2394,3:06, Paul Graham , Greg Xepoleas , Brandon Snyder,NA
+"Wednesday, September 07, 2022",5,5,Flathead Field,NA,2622,2:50,NA,NA,NA,NA
+"Thursday, September 08, 2022",1,5,Nelson Farm Park,Nelson Farm Park,55,3:34,NA,NA,NA,NA
+"Thursday, September 08, 2022",2,5,"Billings, MT",Dehler Park,1541,2:57, Michael Chukerman , Larry Schmitt , Jordan Smart,NA
+"Thursday, September 08, 2022",3,5,"Great Falls, Mt",Centene Stadium,961,3:41, Mike Carr , Josh Garner , Eric Martine,NA
+"Thursday, September 08, 2022",4,5,"Garden City, Idaho",Memorial Stadium,2882,3:51, Kelly Atkinson , Brandon Snyder , Paul Graham,NA
+"Thursday, September 08, 2022",5,5,UC Health Park,NA,1980,3:52, Greg Xppoleas , Tony Praiter , rob minter,NA
+"Friday, September 09, 2022",3,5,UC Health Park,NA,2773,3:03, Rob Minter , Greg Xenoplaus , Tony Praiter,NA
+"Friday, September 09, 2022",4,5,"Billings, Mont.",Dehler Park,1780,3:00, Stu Bertrand , Jordan Smart , Michael Chukerman,NA
+"Friday, September 09, 2022",5,6,"Garden City, Idaho",Memorial Stadium,4767,3:47, Brandon Snyder , Paul Graham , Kelly Atkinson,NA
+"Friday, September 09, 2022",6,6,"Great Falls, Mt",Centene Stadium,2087,2:09, Eric Martinez , Mike Carr , Josh Garner,NA
+"Saturday, September 10, 2022",2,6,"Billings, Mont.",Dehler Park,2304,3:49, Jordan Smart , Michael Chukerman , Stu Bertrand,NA
+"Saturday, September 10, 2022",4,6,"Great Falls, Mt",Centene Stadium,1680,3:04, Mike Carr , Josh Garner , Eric Martinez,NA
+"Saturday, September 10, 2022",5,6,"Garden City, Idaho",Memorial Stadium,4888,2:56, Paul Graham , Kelly Atkinson , Brandon Snyder,NA
