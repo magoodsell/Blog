@@ -20,26 +20,32 @@ Chances are you have heard or seen the movie Moneyball. You might have even read
 
 ## Background
 
-Before I get going it will be useful to have some context. The Chukars used to be a Minor League affilate with Kansas City Royals until the MLB restructured their minor leagues in 2020 leaving the Chukars and Pioneer League unaffialted and consequently, independent. This eventually opened the door for me, two years later, which I will get too. The Pioneer League now is an Offical Partner League to the MLB. Once the affilation with the Royals ended for the Chukars, a 20,000 dollar piece of equipment was just left in the stadium. That piece of equipment is known as Trackman, a black box that seats mounted to the press box directly above home plate. Covid resulted in no games played in 2020...quite the year for the Chukars and the League. Through reaching out to the Chukars I was able to operate Trackman during the 2022 season and that is where my story begins with the League. 
+Before I get going it will be useful to have some context. The Chukars used to be a Minor League affiliate with Kansas City Royals until the MLB restructured their minor leagues in 2020 leaving the Chukars and Pioneer League unaffiliated and consequently, independent. This eventually opened the door for me, two years later, which I will get too. The Pioneer League now is an Official Partner League to the MLB. Once the affiliation with the Royals ended for the Chukars, a 20,000 dollar piece of equipment was just left in the stadium. That piece of equipment is known as Trackman, a black box that seats mounted to the press box directly above home plate. Covid resulted in no games played in 2020...quite the year for the Chukars and the League. Through reaching out to the Chukars I was able to operate Trackman during the 2022 season and that is where my story begins with the League. 
 
 A little more on the Chukars, they play at Melaleuca Field in Idaho Falls. If you are ever in Idaho Falls during a game, it is worth attending on a nice summer evening. Pro tip, if you come, don't park to close to the ballpark or else...
 
 ![](foul_ball_windshield.JPG)
 
-I was in my senior year at Brigham Young University - Idaho located in Rexburg just a 25 minute drive from the ballpark. I had heard about the Chukars but never attended one of their games. I actually never grew up playing baseball. One reason why I didn't go to a game. It's not that I don't like to watch, I have been to a Washington Nationals game and Philadelphia Phillies game as I am from Virginia. Anyways, I had taken a couple math classes from a professor who I had developed a good relationship with. It was a fateful conversation we had one day in the hallway were I opened up to him about where I was and what I really wanted to do with my Major in Data Science. He had the crazy idea to contact the Chukars which took me a minute to remember they are the baseball team in Idaho Falls. We both followed up on it and got to talk to the assistant GM for them. Eventually that lead to me being the trackman operator for the Chukars during the 2022 season. 
+I was in my senior year at Brigham Young University - Idaho located in Rexburg just a 25 minute drive from the ballpark. I had heard about the Chukars but never attended one of their games. I actually never grew up playing baseball. One reason why I didn't go to a game. It's not that I don't like to watch, I have been to a Washington Nationals game and Philadelphia Phillies game as I am from Virginia. Anyways, I had taken a couple math classes from a professor who I had developed a good relationship with. It was a fateful conversation we had one day in the hallway were I opened up to him about where I was and what I really wanted to do with my Major in Data Science. He had the crazy idea to contact the Chukars which took me a minute to remember they are the baseball team in Idaho Falls. We both followed up on it and got to talk to the assistant GM for them. Eventually that lead to me being the Trackman operator for the Chukars during the 2022 season. 
 
-More about the data coming from Trackman. Trackman is actually in all the MLB ballparks and a main source of MLB teams data. The v3 version, I got the chance to operate, returns 167 different variables on batters, pitchers and catchers. Here is a snipbit of some of the variables: 
+More about the data coming from Trackman. Trackman is actually in all the MLB ballparks and a main source of MLB teams data. The v3 version, I got the chance to operate, returns 167 different variables on batters, pitchers and catchers. 
+
 
 ```{r tm_data}
+####################################
+# Below was taken out due to potential legal issues
+# Here is a snip bit of some of the variables: 
+####################################
+
 # show only some columns 
 pacman::p_load(tidyverse, DT) 
-
+# 
 all_games <- read_csv('../../data/unverified_all_games.csv')
-
-
-all_games_2 <- all_games %>% .[1:2,]
-
-DT::datatable(all_games_2)
+# 
+# 
+# all_games_2 <- all_games %>% .[1:2,]
+# 
+# DT::datatable(all_games_2)
 ```
 
 ```{r tm_data_prep}
@@ -80,7 +86,7 @@ As I thought about the league and the data and from conversations with my profes
 
 # My Analysis
 
-While the Leauge has its needs for the data and I am working to provide some resources for them, I had my own projects I wanted to work with the data and the metrics I got from the scout.
+While the League has its needs for the data and I am working to provide some resources for them, I had my own projects I wanted to work with the data and the metrics I got from the scout.
 
 To find out who the better Pitchers, Batters, and Catchers are around the league, I took the metrics the scout gave me and decide to create a ranking summation model to determine which ones were the best overall players for their respective positions. I know there are many SABRmetrics that can calculated and more advanced ways to doing something like this, but I needed something fast and something simple.
 
