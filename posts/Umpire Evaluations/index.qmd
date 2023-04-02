@@ -2,7 +2,6 @@
 title: "It all evens out ... until it doesn't"
 author: "Matthew Goodsell"
 date: "2023-04-01"
-draft: True
 categories: [Baseball, Analytics]
 freeze: True
 format: 
